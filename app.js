@@ -451,20 +451,29 @@ function showTooltip(tooltipId, event) {
         event.stopPropagation();
     }
     
-    // Hide all other tooltips
-    document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
-    
-    // Toggle this tooltip
     const tooltip = document.getElementById(tooltipId);
     console.log('Tooltip element:', tooltip);
     
-    if (tooltip) {
-        const wasHidden = tooltip.classList.contains('hidden');
-        tooltip.classList.toggle('hidden');
-        console.log('Tooltip hidden class:', tooltip.classList.contains('hidden'));
+    if (!tooltip) {
+        console.error('Tooltip not found:', tooltipId);
+        return;
+    }
+    
+    const isCurrentlyHidden = tooltip.classList.contains('hidden');
+    console.log('Tooltip currently hidden:', isCurrentlyHidden);
+    
+    // Hide all tooltips first
+    document.querySelectorAll('.tooltip').forEach(t => {
+        t.classList.add('hidden');
+    });
+    
+    // If this tooltip was hidden, show it
+    if (isCurrentlyHidden) {
+        tooltip.classList.remove('hidden');
+        console.log('Showing tooltip');
         
-        // If we're showing the tooltip, position it
-        if (wasHidden && event && event.target) {
+        // Position the tooltip if we have event info
+        if (event && event.target) {
             const icon = event.target;
             const iconRect = icon.getBoundingClientRect();
             const parentRect = icon.closest('.control-group, .slider-group').getBoundingClientRect();
@@ -474,7 +483,8 @@ function showTooltip(tooltipId, event) {
             tooltip.style.left = (iconRect.left - parentRect.left - 20) + 'px';
         }
     } else {
-        console.error('Tooltip not found:', tooltipId);
+        console.log('Hiding tooltip');
+        // Tooltip was visible, so keep it hidden (already done above)
     }
 }
 
@@ -483,9 +493,18 @@ window.showTooltip = showTooltip;
 
 // Hide tooltips when clicking elsewhere
 document.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('info-icon') && !e.target.closest('.tooltip')) {
-        document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
+    // Skip if clicking on info icon (handled by showTooltip)
+    if (e.target.classList.contains('info-icon')) {
+        return;
     }
+    
+    // Skip if clicking inside a tooltip
+    if (e.target.closest('.tooltip')) {
+        return;
+    }
+    
+    // Hide all tooltips
+    document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
 });
 
 // Tab functionality

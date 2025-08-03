@@ -3,82 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Football Draft Assistant</title>
+    <title>Fantasy Football Draft Assistant - Advanced Analytics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Fantasy Football Draft Assistant</h1>
-    </header>
-    
-    <div class="tabs">
-        <button class="tab-button active" onclick="showTab('control-panel')">Control Panel</button>
-        <button class="tab-button" onclick="showTab('draft-pick')">Draft Pick</button>
-    </div>
-    
-    <div id="control-panel" class="tab-content active">
-        <h2>Statistical Model Control Panel</h2>
-        <div class="controls">
-            <div class="control-group">
-                <label for="injury-weight">Injury Risk Weight:</label>
-                <input type="range" id="injury-weight" min="0" max="2" step="0.1" value="1">
-                <span id="injury-weight-value">1</span>
-            </div>
-            
-            <div class="control-group">
-                <label for="performance-weight">Performance Weight:</label>
-                <input type="range" id="performance-weight" min="0" max="2" step="0.1" value="1">
-                <span id="performance-weight-value">1</span>
-            </div>
-            
-            <div class="control-group">
-                <label for="consistency-weight">Consistency Weight:</label>
-                <input type="range" id="consistency-weight" min="0" max="2" step="0.1" value="1">
-                <span id="consistency-weight-value">1</span>
-            </div>
-            
-            <div class="control-group">
-                <label for="position-filter">Position Filter:</label>
-                <select id="position-filter">
-                    <option value="all">All Positions</option>
-                    <option value="QB">Quarterback (QB)</option>
-                    <option value="RB">Running Back (RB)</option>
-                    <option value="WR">Wide Receiver (WR)</option>
-                    <option value="TE">Tight End (TE)</option>
-                    <option value="K">Kicker (K)</option>
-                    <option value="DEF">Defense (DEF)</option>
-                </select>
-            </div>
-            
-            <button id="update-model" class="btn-primary">Update Model</button>
+    <div class="container">
+        <header>
+            <h1>Fantasy Football Draft Assistant</h1>
+            <p class="subtitle">Advanced VORP-Based Rankings with Risk Analysis</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('draft-pick')">Draft Tracker</button>
+            <button class="tab-button" onclick="showTab('control-panel')">Analytics Control Panel</button>
+            <button class="tab-button" onclick="showTab('methodology')">Methodology</button>
         </div>
-        
-        <div class="model-stats">
-            <h3>Model Statistics</h3>
-            <div id="model-info"></div>
-        </div>
-    </div>
-    
-    <div id="draft-pick" class="tab-content">
-        <h2>Draft Pick Assistant</h2>
-        <div class="draft-controls">
-            <div class="drafted-players">
-                <h3>Mark Players as Drafted</h3>
-                <input type="text" id="player-search" placeholder="Search player name...">
-                <div id="search-results"></div>
-                <div id="drafted-list">
-                    <h4>Already Drafted:</h4>
-                    <ul id="drafted-players-list"></ul>
+
+        <div id="draft-pick" class="tab-content active">
+            <h2>Live Draft Tracker</h2>
+            
+            <div class="draft-container">
+                <div class="draft-left">
+                    <div class="draft-controls">
+                        <h3>League Settings</h3>
+                        <div class="position-limits">
+                            <h4>Roster Limits:</h4>
+                            <div class="limit-row"><span>QB:</span> <span id="qb-limit">1</span></div>
+                            <div class="limit-row"><span>RB:</span> <span id="rb-limit">2</span></div>
+                            <div class="limit-row"><span>WR:</span> <span id="wr-limit">2</span></div>
+                            <div class="limit-row"><span>TE:</span> <span id="te-limit">1</span></div>
+                            <div class="limit-row"><span>FLEX:</span> <span id="flex-limit">1</span></div>
+                            <div class="limit-row"><span>K:</span> <span id="k-limit">1</span></div>
+                            <div class="limit-row"><span>DEF:</span> <span id="def-limit">1</span></div>
+                            <div class="limit-row"><span>BENCH:</span> <span id="bench-limit">6</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="available-players">
+                        <h3>Available Players</h3>
+                        <div class="position-tabs">
+                            <button class="pos-tab active" onclick="filterPosition('ALL')">All</button>
+                            <button class="pos-tab" onclick="filterPosition('QB')">QB</button>
+                            <button class="pos-tab" onclick="filterPosition('RB')">RB</button>
+                            <button class="pos-tab" onclick="filterPosition('WR')">WR</button>
+                            <button class="pos-tab" onclick="filterPosition('TE')">TE</button>
+                            <button class="pos-tab" onclick="filterPosition('K')">K</button>
+                            <button class="pos-tab" onclick="filterPosition('DEF')">DEF</button>
+                        </div>
+                        <div class="player-pool" id="player-pool">
+                            <!-- Available players will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="draft-right">
+                    <h3>Team Boards</h3>
+                    <div class="teams-container" id="teams-container">
+                        <!-- Team boards will be dynamically generated here -->
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div id="control-panel" class="tab-content">
+            <div class="control-section">
+                <h2>League Configuration</h2>
+                
+                <div class="control-group">
+                    <label for="league-size">
+                        League Size:
+                        <span class="info-icon" onclick="showTooltip('league-size-info')">ⓘ</span>
+                    </label>
+                    <input type="number" id="league-size" min="4" max="20" value="12" step="1">
+                    <span class="unit-label">teams</span>
+                    <div id="league-size-info" class="tooltip hidden">
+                        Number of teams in your league. This affects replacement levels - larger leagues have worse players available on waivers.
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="scoring-type">
+                        Scoring Type:
+                        <span class="info-icon" onclick="showTooltip('scoring-type-info')">ⓘ</span>
+                    </label>
+                    <select id="scoring-type">
+                        <option value="standard">Standard</option>
+                        <option value="halfPPR" selected>Half PPR (0.5)</option>
+                        <option value="PPR">Full PPR (1.0)</option>
+                    </select>
+                    <div id="scoring-type-info" class="tooltip hidden">
+                        <strong>Standard:</strong> No points for receptions<br>
+                        <strong>Half PPR:</strong> 0.5 points per reception<br>
+                        <strong>Full PPR:</strong> 1.0 point per reception<br>
+                        PPR scoring increases the value of pass-catching RBs and high-volume WRs.
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="position-priority">
+                        Draft Strategy:
+                        <span class="info-icon" onclick="showTooltip('strategy-info')">ⓘ</span>
+                    </label>
+                    <select id="position-priority">
+                        <option value="balanced" selected>Balanced Approach</option>
+                        <option value="RB-heavy">RB Heavy (Zero RB Counter)</option>
+                        <option value="WR-heavy">WR Heavy (Zero RB)</option>
+                        <option value="elite-QB">Elite QB Priority</option>
+                    </select>
+                    <div id="strategy-info" class="tooltip hidden">
+                        <strong>Balanced:</strong> Best player available approach<br>
+                        <strong>RB Heavy:</strong> Prioritize RBs early (traditional strategy)<br>
+                        <strong>WR Heavy:</strong> Load up on WRs, wait on RBs (Zero RB strategy)<br>
+                        <strong>Elite QB:</strong> Get a top-5 QB early for consistency
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <h2>Model Parameters</h2>
+                
+                <div class="slider-group">
+                    <label for="risk-tolerance">
+                        Risk Tolerance:
+                        <span class="info-icon" onclick="showTooltip('risk-tolerance-info')">ⓘ</span>
+                    </label>
+                    <div class="slider-container">
+                        <span class="slider-label">Floor</span>
+                        <input type="range" id="risk-tolerance" min="0" max="1" step="0.1" value="0.5">
+                        <span class="slider-label">Ceiling</span>
+                    </div>
+                    <span id="risk-value" class="slider-value">0.5</span>
+                    <div id="risk-tolerance-info" class="tooltip hidden">
+                        <strong>Conservative (0-0.3):</strong> Prioritize consistent players with safe floors<br>
+                        <strong>Balanced (0.4-0.6):</strong> Mix of floor and ceiling considerations<br>
+                        <strong>Aggressive (0.7-1.0):</strong> Target high-ceiling players with boom potential
+                    </div>
+                </div>
+
+                <div class="slider-group">
+                    <label for="vorp-weight">
+                        VORP Weight:
+                        <span class="info-icon" onclick="showTooltip('vorp-weight-info')">ⓘ</span>
+                    </label>
+                    <input type="range" id="vorp-weight" min="0" max="1" step="0.1" value="0.7">
+                    <span id="vorp-weight-value" class="slider-value">0.7</span>
+                    <div id="vorp-weight-info" class="tooltip hidden">
+                        Value Over Replacement Player (VORP) measures how much better a player is than what's available on waivers. Higher weight emphasizes positional scarcity.
+                    </div>
+                </div>
+
+                <div class="slider-group">
+                    <label for="consistency-weight">
+                        Consistency Weight:
+                        <span class="info-icon" onclick="showTooltip('consistency-weight-info')">ⓘ</span>
+                    </label>
+                    <input type="range" id="consistency-weight" min="0" max="1" step="0.1" value="0.3">
+                    <span id="consistency-weight-value" class="slider-value">0.3</span>
+                    <div id="consistency-weight-info" class="tooltip hidden">
+                        Rewards players who produce steady week-to-week results. High consistency is valuable for must-start players.
+                    </div>
+                </div>
+
+                <div class="slider-group">
+                    <label for="injury-weight">
+                        Injury Risk Penalty:
+                        <span class="info-icon" onclick="showTooltip('injury-weight-info')">ⓘ</span>
+                    </label>
+                    <input type="range" id="injury-weight" min="0" max="1" step="0.1" value="0.5">
+                    <span id="injury-weight-value" class="slider-value">0.5</span>
+                    <div id="injury-weight-info" class="tooltip hidden">
+                        Penalizes players based on injury history. Higher values mean more cautious approach to injury-prone players.
+                    </div>
+                </div>
+            </div>
+
+            <div class="rankings-section">
+                <h2>Player Rankings</h2>
+                
+                <div class="filter-controls">
+                    <label for="position-filter">Filter by Position:</label>
+                    <select id="position-filter">
+                        <option value="ALL">All Positions</option>
+                        <option value="QB">Quarterbacks</option>
+                        <option value="RB">Running Backs</option>
+                        <option value="WR">Wide Receivers</option>
+                        <option value="TE">Tight Ends</option>
+                        <option value="K">Kickers</option>
+                        <option value="DEF">Defense/ST</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <table id="rankings-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player</th>
+                                <th>Pos</th>
+                                <th>Team</th>
+                                <th>VORP</th>
+                                <th>Floor</th>
+                                <th>Ceiling</th>
+                                <th>Consistency</th>
+                                <th>Injury Risk</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rankings-body">
+                            <!-- Rankings will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="model-info" class="model-info">
+                <!-- Model information will be displayed here -->
+            </div>
+        </div>
+
+
+        <div id="methodology" class="tab-content">
+            <h2>Methodology</h2>
             
-            <div class="recommendations">
-                <h3>Top Available Players</h3>
-                <div id="player-rankings"></div>
+            <div class="methodology-section">
+                <h3>Value Over Replacement Player (VORP)</h3>
+                <p>VORP measures how many more fantasy points a player is projected to score compared to a "replacement level" player at the same position. The replacement level is determined by your league size and roster requirements.</p>
+                
+                <h3>Risk-Adjusted Rankings</h3>
+                <p>Our model calculates both floor (20th percentile outcome) and ceiling (80th percentile outcome) projections. Your risk tolerance setting determines how much weight to give each:</p>
+                <ul>
+                    <li><strong>Conservative (Floor):</strong> Prioritizes consistent, reliable players</li>
+                    <li><strong>Balanced:</strong> Considers both floor and ceiling equally</li>
+                    <li><strong>Aggressive (Ceiling):</strong> Prioritizes high-upside players</li>
+                </ul>
+                
+                <h3>Positional Scarcity</h3>
+                <p>The model analyzes the drop-off rate at each position to identify where talent becomes scarce. Positions with steeper drop-offs receive a scarcity bonus.</p>
+                
+                <h3>Injury Risk Adjustment</h3>
+                <p>Player projections are adjusted based on injury history and position-specific injury rates. The injury weight slider controls how much this affects rankings.</p>
             </div>
         </div>
     </div>
-    
+
     <script src="app.js"></script>
+    <script src="draft-board.js"></script>
 </body>
 </html>

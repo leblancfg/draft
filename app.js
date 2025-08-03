@@ -46,38 +46,10 @@ async function loadPlayerData() {
         displayModelInfo();
     } catch (error) {
         console.error('Error loading player data:', error);
-        playersData = generateMockData();
-        updateModel();
-        displayModelInfo();
+        alert('Error loading player data. Please refresh the page.');
     }
 }
 
-function generateMockData() {
-    const positions = ['QB', 'RB', 'WR', 'TE', 'K', 'DEF'];
-    const teams = ['KC', 'BUF', 'CIN', 'JAX', 'LAC', 'BAL', 'MIA', 'NE', 'NYJ', 'PIT', 'CLE', 'TEN', 'IND', 'HOU', 'DEN', 'LV'];
-    
-    const mockPlayers = [];
-    for (let i = 0; i < 200; i++) {
-        mockPlayers.push({
-            id: i + 1,
-            name: `Player ${i + 1}`,
-            position: positions[Math.floor(Math.random() * positions.length)],
-            team: teams[Math.floor(Math.random() * teams.length)],
-            stats: {
-                gamesPlayed: Math.floor(Math.random() * 5) + 12,
-                totalPoints: Math.floor(Math.random() * 200) + 100,
-                averagePoints: Math.random() * 15 + 5,
-                consistency: Math.random() * 0.3 + 0.7
-            },
-            injury: {
-                gamesInjured: Math.floor(Math.random() * 5),
-                injuryHistory: Math.random() > 0.7 ? ['knee', 'ankle'] : [],
-                riskScore: Math.random() * 0.5
-            }
-        });
-    }
-    return mockPlayers;
-}
 
 function calculatePlayerScore(player) {
     const performanceScore = player.stats.averagePoints * 10;

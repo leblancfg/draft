@@ -139,6 +139,7 @@ h1 {
 /* Sliders */
 .slider-group {
     margin-bottom: 25px;
+    position: relative;
 }
 
 .slider-group label {

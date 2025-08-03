@@ -444,15 +444,25 @@ function filterPosition(position) {
 
 // Tooltip functionality
 function showTooltip(tooltipId) {
+    console.log('showTooltip called with:', tooltipId);
+    
     // Hide all other tooltips
     document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
     
     // Toggle this tooltip
     const tooltip = document.getElementById(tooltipId);
+    console.log('Tooltip element:', tooltip);
+    
     if (tooltip) {
         tooltip.classList.toggle('hidden');
+        console.log('Tooltip hidden class:', tooltip.classList.contains('hidden'));
+    } else {
+        console.error('Tooltip not found:', tooltipId);
     }
 }
+
+// Make showTooltip available globally
+window.showTooltip = showTooltip;
 
 // Hide tooltips when clicking elsewhere
 document.addEventListener('click', (e) => {

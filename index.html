@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Draft Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fantasy Football Draft Assistant</h1>
+    </header>
+    
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('control-panel')">Control Panel</button>
+        <button class="tab-button" onclick="showTab('draft-pick')">Draft Pick</button>
+    </div>
+    
+    <div id="control-panel" class="tab-content active">
+        <h2>Statistical Model Control Panel</h2>
+        <div class="controls">
+            <div class="control-group">
+                <label for="injury-weight">Injury Risk Weight:</label>
+                <input type="range" id="injury-weight" min="0" max="2" step="0.1" value="1">
+                <span id="injury-weight-value">1</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="performance-weight">Performance Weight:</label>
+                <input type="range" id="performance-weight" min="0" max="2" step="0.1" value="1">
+                <span id="performance-weight-value">1</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="consistency-weight">Consistency Weight:</label>
+                <input type="range" id="consistency-weight" min="0" max="2" step="0.1" value="1">
+                <span id="consistency-weight-value">1</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="position-filter">Position Filter:</label>
+                <select id="position-filter">
+                    <option value="all">All Positions</option>
+                    <option value="QB">Quarterback (QB)</option>
+                    <option value="RB">Running Back (RB)</option>
+                    <option value="WR">Wide Receiver (WR)</option>
+                    <option value="TE">Tight End (TE)</option>
+                    <option value="K">Kicker (K)</option>
+                    <option value="DEF">Defense (DEF)</option>
+                </select>
+            </div>
+            
+            <button id="update-model" class="btn-primary">Update Model</button>
+        </div>
+        
+        <div class="model-stats">
+            <h3>Model Statistics</h3>
+            <div id="model-info"></div>
+        </div>
+    </div>
+    
+    <div id="draft-pick" class="tab-content">
+        <h2>Draft Pick Assistant</h2>
+        <div class="draft-controls">
+            <div class="drafted-players">
+                <h3>Mark Players as Drafted</h3>
+                <input type="text" id="player-search" placeholder="Search player name...">
+                <div id="search-results"></div>
+                <div id="drafted-list">
+                    <h4>Already Drafted:</h4>
+                    <ul id="drafted-players-list"></ul>
+                </div>
+            </div>
+            
+            <div class="recommendations">
+                <h3>Top Available Players</h3>
+                <div id="player-rankings"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

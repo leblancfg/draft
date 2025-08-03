@@ -1,1930 +1,4315 @@
 [
   {
-    "id": 1,
-    "name": "Josh Allen",
-    "position": "QB",
-    "team": "KC",
+    "id": 226,
+    "name": "Jets D/ST",
+    "position": "DEF",
+    "team": "NYJ",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 367.2151129034872,
-      "averagePoints": 21.600888994322776,
-      "consistency": 0.7280000000000001
+      "totalPoints": 169.892564817498,
+      "averagePoints": 9.993680283382234,
+      "consistency": 0.7875316594900855
     },
     "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "knee"
-      ],
-      "riskScore": 0.30000000000000004
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1707296069034852
     }
   },
   {
-    "id": 2,
-    "name": "Dak Prescott",
+    "id": 229,
+    "name": "Dolphins D/ST",
+    "position": "DEF",
+    "team": "MIA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 164.50870259946993,
+      "averagePoints": 9.676982505851171,
+      "consistency": 0.6586509470118196
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1721904079232602
+    }
+  },
+  {
+    "id": 222,
+    "name": "Cowboys D/ST",
+    "position": "DEF",
+    "team": "DAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 160.7956689500203,
+      "averagePoints": 9.458568761765902,
+      "consistency": 0.800106031158568
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.12242982180743237
+    }
+  },
+  {
+    "id": 227,
+    "name": "Saints D/ST",
+    "position": "DEF",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 157.8087749115602,
+      "averagePoints": 9.282869112444716,
+      "consistency": 0.7036131780110116
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.19856168489466172
+    }
+  },
+  {
+    "id": 221,
+    "name": "49ers D/ST",
+    "position": "DEF",
+    "team": "SF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 157.01204214882398,
+      "averagePoints": 9.236002479342588,
+      "consistency": 0.8609970054035678
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1386930806543646
+    }
+  },
+  {
+    "id": 228,
+    "name": "Steelers D/ST",
+    "position": "DEF",
+    "team": "PIT",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 154.69352386851054,
+      "averagePoints": 9.099619051088855,
+      "consistency": 0.7713647289835552
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.19716830031274674
+    }
+  },
+  {
+    "id": 230,
+    "name": "Chiefs D/ST",
+    "position": "DEF",
+    "team": "KC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 152.37078097298416,
+      "averagePoints": 8.962987116057892,
+      "consistency": 0.6996119260254675
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.17047635195745414
+    }
+  },
+  {
+    "id": 224,
+    "name": "Ravens D/ST",
+    "position": "DEF",
+    "team": "BAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 147.28973596374257,
+      "averagePoints": 8.664102115514268,
+      "consistency": 0.8957620519172276
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1466160736290643
+    }
+  },
+  {
+    "id": 223,
+    "name": "Bills D/ST",
+    "position": "DEF",
+    "team": "BUF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 144.5796439648793,
+      "averagePoints": 8.504684939110547,
+      "consistency": 0.809678675197138
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.16574464346689327
+    }
+  },
+  {
+    "id": 225,
+    "name": "Browns D/ST",
+    "position": "DEF",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 143.3231700557535,
+      "averagePoints": 8.430774709161971,
+      "consistency": 0.7508108669978149
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1362944010526335
+    }
+  },
+  {
+    "id": 232,
+    "name": "Bengals D/ST",
+    "position": "DEF",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 124.41064497163678,
+      "averagePoints": 7.3182732336256935,
+      "consistency": 0.710150175876134
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1187847432878636
+    }
+  },
+  {
+    "id": 233,
+    "name": "Broncos D/ST",
+    "position": "DEF",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 122.89541322829827,
+      "averagePoints": 7.2291419546057805,
+      "consistency": 0.6503655635031089
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.15938930553349134
+    }
+  },
+  {
+    "id": 239,
+    "name": "Chargers D/ST",
+    "position": "DEF",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 118.9345048569236,
+      "averagePoints": 6.996147344524918,
+      "consistency": 0.7846462693349949
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1852841165778428
+    }
+  },
+  {
+    "id": 234,
+    "name": "Jaguars D/ST",
+    "position": "DEF",
+    "team": "JAX",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 118.21337196206935,
+      "averagePoints": 6.953727762474667,
+      "consistency": 0.7286978618614327
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.15654831481333464
+    }
+  },
+  {
+    "id": 236,
+    "name": "Packers D/ST",
+    "position": "DEF",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 114.74165758986237,
+      "averagePoints": 6.749509269991904,
+      "consistency": 0.6754818564225328
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1075147597503276
+    }
+  },
+  {
+    "id": 240,
+    "name": "Texans D/ST",
+    "position": "DEF",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 111.26552430312815,
+      "averagePoints": 6.545030841360479,
+      "consistency": 0.7887186418069471
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.17774436055145187
+    }
+  },
+  {
+    "id": 231,
+    "name": "Eagles D/ST",
+    "position": "DEF",
+    "team": "PHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 107.6227425995101,
+      "averagePoints": 6.330749564677065,
+      "consistency": 0.7596529089767898
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1706938696483847
+    }
+  },
+  {
+    "id": 235,
+    "name": "Patriots D/ST",
+    "position": "DEF",
+    "team": "NE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 105.54769933671068,
+      "averagePoints": 6.208688196277099,
+      "consistency": 0.7144821666357127
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1872087431032185
+    }
+  },
+  {
+    "id": 238,
+    "name": "Seahawks D/ST",
+    "position": "DEF",
+    "team": "SEA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 104.35839952250382,
+      "averagePoints": 6.138729383676695,
+      "consistency": 0.7642451681527203
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.10565592992964751
+    }
+  },
+  {
+    "id": 237,
+    "name": "Lions D/ST",
+    "position": "DEF",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 102.21313226131687,
+      "averagePoints": 6.012537191842169,
+      "consistency": 0.6850244352066
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.15016396337879068
+    }
+  },
+  {
+    "id": 242,
+    "name": "Colts D/ST",
+    "position": "DEF",
+    "team": "IND",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 82.48456350767607,
+      "averagePoints": 4.852033147510357,
+      "consistency": 0.5664789925059778
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1032403357148471
+    }
+  },
+  {
+    "id": 244,
+    "name": "Rams D/ST",
+    "position": "DEF",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 80.94352805978842,
+      "averagePoints": 4.761384003516966,
+      "consistency": 0.6264094831308439
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.15433474249839851
+    }
+  },
+  {
+    "id": 248,
+    "name": "Falcons D/ST",
+    "position": "DEF",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 77.88756290483656,
+      "averagePoints": 4.581621347343327,
+      "consistency": 0.6893870397828151
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.18465075101346495
+    }
+  },
+  {
+    "id": 250,
+    "name": "Cardinals D/ST",
+    "position": "DEF",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 77.79318726208908,
+      "averagePoints": 4.576069838946417,
+      "consistency": 0.5611020095250867
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.11661949836237395
+    }
+  },
+  {
+    "id": 249,
+    "name": "Raiders D/ST",
+    "position": "DEF",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 75.60113351654554,
+      "averagePoints": 4.447125500973267,
+      "consistency": 0.5512286466049192
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.1154830517652819
+    }
+  },
+  {
+    "id": 245,
+    "name": "Titans D/ST",
+    "position": "DEF",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 74.89033590322538,
+      "averagePoints": 4.405313876660316,
+      "consistency": 0.6143117403917703
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.16151189296339252
+    }
+  },
+  {
+    "id": 246,
+    "name": "Bears D/ST",
+    "position": "DEF",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 73.95252085025426,
+      "averagePoints": 4.350148285309074,
+      "consistency": 0.6279407157993591
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.19424640979402574
+    }
+  },
+  {
+    "id": 241,
+    "name": "Vikings D/ST",
+    "position": "DEF",
+    "team": "MIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 73.94043524922995,
+      "averagePoints": 4.3494373676017615,
+      "consistency": 0.5774369924243551
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.11861333981310523
+    }
+  },
+  {
+    "id": 243,
+    "name": "Buccaneers D/ST",
+    "position": "DEF",
+    "team": "TB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 70.41705894877428,
+      "averagePoints": 4.142179938163193,
+      "consistency": 0.6157608993580668
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.12893773090327676
+    }
+  },
+  {
+    "id": 251,
+    "name": "Commanders D/ST",
+    "position": "DEF",
+    "team": "WAS",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 69.5597410211378,
+      "averagePoints": 4.091749471831635,
+      "consistency": 0.635845771206755
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.19863950480590065
+    }
+  },
+  {
+    "id": 247,
+    "name": "Giants D/ST",
+    "position": "DEF",
+    "team": "NYG",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 68.47531610334504,
+      "averagePoints": 4.027959770785002,
+      "consistency": 0.5708725592785057
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.17220291915489647
+    }
+  },
+  {
+    "id": 252,
+    "name": "Panthers D/ST",
+    "position": "DEF",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 66.48147844856564,
+      "averagePoints": 3.9106752028568024,
+      "consistency": 0.5990431081662951
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.10794399091813889
+    }
+  },
+  {
+    "id": 192,
+    "name": "Harrison Butker",
+    "position": "K",
+    "team": "KC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 170.41540675069433,
+      "averagePoints": 10.024435691217313,
+      "consistency": 0.8268841864583505
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.056244065621365164
+    }
+  },
+  {
+    "id": 197,
+    "name": "Evan McPherson",
+    "position": "K",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 166.0539279176001,
+      "averagePoints": 9.767878112800005,
+      "consistency": 0.7031108740155307
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.031658730225769004
+    }
+  },
+  {
+    "id": 199,
+    "name": "Cameron Dicker",
+    "position": "K",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 162.482348858588,
+      "averagePoints": 9.557785226975765,
+      "consistency": 0.7192942447809796
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.048322940311503554
+    }
+  },
+  {
+    "id": 193,
+    "name": "Daniel Carlson",
+    "position": "K",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 161.76469239343405,
+      "averagePoints": 9.515570140790238,
+      "consistency": 0.7652282517519688
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.046163622641296066
+    }
+  },
+  {
+    "id": 194,
+    "name": "Tyler Bass",
+    "position": "K",
+    "team": "BUF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 159.98904316334364,
+      "averagePoints": 9.411120186079037,
+      "consistency": 0.8591700037173977
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.005527200255136457
+    }
+  },
+  {
+    "id": 196,
+    "name": "Jason Myers",
+    "position": "K",
+    "team": "SEA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 158.57097642991485,
+      "averagePoints": 9.327704495877343,
+      "consistency": 0.7514491512057891
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.04289539151479861
+    }
+  },
+  {
+    "id": 200,
+    "name": "Brandon McManus",
+    "position": "K",
+    "team": "WAS",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 158.0270473754006,
+      "averagePoints": 9.295708669141211,
+      "consistency": 0.6879668696286431
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.0135964691927465
+    }
+  },
+  {
+    "id": 198,
+    "name": "Younghoe Koo",
+    "position": "K",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 156.50045255526328,
+      "averagePoints": 9.205908973839016,
+      "consistency": 0.7907837350325755
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.008481874054812003
+    }
+  },
+  {
+    "id": 191,
+    "name": "Justin Tucker",
+    "position": "K",
+    "team": "BAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 152.7326062830606,
+      "averagePoints": 8.984270957827093,
+      "consistency": 0.7808063005007119
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.08851140563510718
+    }
+  },
+  {
+    "id": 195,
+    "name": "Jake Elliott",
+    "position": "K",
+    "team": "PHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 146.29099972575483,
+      "averagePoints": 8.605352925044402,
+      "consistency": 0.83393952619796
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.040294917610639906
+    }
+  },
+  {
+    "id": 202,
+    "name": "Jake Moody",
+    "position": "K",
+    "team": "SF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 135.29313239595942,
+      "averagePoints": 7.9584195527034955,
+      "consistency": 0.7673578652360944
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.043417131744169946
+    }
+  },
+  {
+    "id": 201,
+    "name": "Matt Gay",
+    "position": "K",
+    "team": "IND",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 131.30703663879004,
+      "averagePoints": 7.7239433316935315,
+      "consistency": 0.704892779429231
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.000978131982909157
+    }
+  },
+  {
+    "id": 207,
+    "name": "Chase McLaughlin",
+    "position": "K",
+    "team": "TB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 126.29530450311896,
+      "averagePoints": 7.429135559006998,
+      "consistency": 0.7980844730890095
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.06073477676547561
+    }
+  },
+  {
+    "id": 205,
+    "name": "Cairo Santos",
+    "position": "K",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 125.73722176548941,
+      "averagePoints": 7.396307162675847,
+      "consistency": 0.723434233244316
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.07125787443711515
+    }
+  },
+  {
+    "id": 206,
+    "name": "Brandon Aubrey",
+    "position": "K",
+    "team": "DAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 124.48129540340754,
+      "averagePoints": 7.322429141376914,
+      "consistency": 0.6964323102157879
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.06397994077493575
+    }
+  },
+  {
+    "id": 208,
+    "name": "Dustin Hopkins",
+    "position": "K",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 123.14612170021572,
+      "averagePoints": 7.243889511777395,
+      "consistency": 0.7344531673542594
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.06338820479408842
+    }
+  },
+  {
+    "id": 209,
+    "name": "Will Lutz",
+    "position": "K",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 122.10441253417756,
+      "averagePoints": 7.1826125020104445,
+      "consistency": 0.7850181311365427
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.019404468106932152
+    }
+  },
+  {
+    "id": 204,
+    "name": "Jason Sanders",
+    "position": "K",
+    "team": "MIA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 121.64295952891729,
+      "averagePoints": 7.15546820758337,
+      "consistency": 0.6575517561350777
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.09880008482381594
+    }
+  },
+  {
+    "id": 210,
+    "name": "Blake Grupe",
+    "position": "K",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 120.552557463236,
+      "averagePoints": 7.091326909602118,
+      "consistency": 0.7273096469483046
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.05541635457521552
+    }
+  },
+  {
+    "id": 203,
+    "name": "Greg Zuerlein",
+    "position": "K",
+    "team": "NYJ",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 118.97466013897514,
+      "averagePoints": 6.998509419939714,
+      "consistency": 0.7719050820025889
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.08562246634559045
+    }
+  },
+  {
+    "id": 212,
+    "name": "Anders Carlson",
+    "position": "K",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 109.48966491922548,
+      "averagePoints": 6.440568524660322,
+      "consistency": 0.6846759260779689
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.08444157072006908
+    }
+  },
+  {
+    "id": 215,
+    "name": "Matt Prater",
+    "position": "K",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 105.92782024200694,
+      "averagePoints": 6.23104824952982,
+      "consistency": 0.6520251276671121
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.07590447112200234
+    }
+  },
+  {
+    "id": 218,
+    "name": "Riley Patterson",
+    "position": "K",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 105.50907631068569,
+      "averagePoints": 6.2064162535697465,
+      "consistency": 0.5803518396226033
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.053546983529948515
+    }
+  },
+  {
+    "id": 211,
+    "name": "Nick Folk",
+    "position": "K",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 105.08280166079471,
+      "averagePoints": 6.181341274164395,
+      "consistency": 0.599309456462217
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.07740408752734396
+    }
+  },
+  {
+    "id": 216,
+    "name": "Joey Slye",
+    "position": "K",
+    "team": "NE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 103.66544351372131,
+      "averagePoints": 6.097967265513018,
+      "consistency": 0.5512520165553255
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.040308254442450335
+    }
+  },
+  {
+    "id": 217,
+    "name": "Eddy Pineiro",
+    "position": "K",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 101.95093130946321,
+      "averagePoints": 5.9971136064390125,
+      "consistency": 0.6385399362942149
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.054653500500173285
+    }
+  },
+  {
+    "id": 220,
+    "name": "Matthew Wright",
+    "position": "K",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 99.2833886360204,
+      "averagePoints": 5.840199331530612,
+      "consistency": 0.6447339824264379
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.01833277650628036
+    }
+  },
+  {
+    "id": 213,
+    "name": "Graham Gano",
+    "position": "K",
+    "team": "NYG",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 97.77960221271267,
+      "averagePoints": 5.751741306630158,
+      "consistency": 0.6356060463489518
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.09483825233830942
+    }
+  },
+  {
+    "id": 214,
+    "name": "Chris Boswell",
+    "position": "K",
+    "team": "PIT",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 95.26467147869754,
+      "averagePoints": 5.603804204629267,
+      "consistency": 0.5562665580278707
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.0019385644357078
+    }
+  },
+  {
+    "id": 219,
+    "name": "Chad Ryland",
+    "position": "K",
+    "team": "NE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 91.89787057525183,
+      "averagePoints": 5.405757092661872,
+      "consistency": 0.6555383423629314
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.020667133750105496
+    }
+  },
+  {
+    "id": 1,
+    "name": "Josh Allen",
     "position": "QB",
     "team": "BUF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 372.6000435181493,
-      "averagePoints": 21.917649618714663,
-      "consistency": 0.79
+      "totalPoints": 479.261830651962,
+      "averagePoints": 28.19187239129188,
+      "consistency": 0.8348874102215309
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.20335140507495073
     }
   },
   {
-    "id": 3,
-    "name": "Jalen Hurts",
+    "id": 2,
+    "name": "Patrick Mahomes",
     "position": "QB",
-    "team": "CIN",
+    "team": "KC",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 345.94803881750846,
-      "averagePoints": 20.349884636324028,
-      "consistency": 0.78
+      "totalPoints": 436.7145520425848,
+      "averagePoints": 25.689091296622635,
+      "consistency": 0.8470519129183476
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.17966252713234582
     }
   },
   {
     "id": 4,
     "name": "Lamar Jackson",
     "position": "QB",
-    "team": "JAX",
+    "team": "BAL",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 314.6916923488317,
-      "averagePoints": 18.51127602051951,
-      "consistency": 0.77
+      "totalPoints": 433.02598827256577,
+      "averagePoints": 25.47211695720975,
+      "consistency": 0.8770455999627326
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.2016766634077153
     }
   },
   {
     "id": 5,
-    "name": "Patrick Mahomes",
+    "name": "Dak Prescott",
     "position": "QB",
-    "team": "LAC",
+    "team": "DAL",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 320.6686893864401,
-      "averagePoints": 18.8628640815553,
-      "consistency": 0.6916
+      "totalPoints": 427.3740748799193,
+      "averagePoints": 25.139651463524665,
+      "consistency": 0.7673764513169362
     },
     "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "hamstring"
-      ],
-      "riskScore": 0.30000000000000004
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2273290821727723
+    }
+  },
+  {
+    "id": 3,
+    "name": "Jalen Hurts",
+    "position": "QB",
+    "team": "PHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 422.5023478838775,
+      "averagePoints": 24.853079287286914,
+      "consistency": 0.7800220180497944
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2010414623922513
     }
   },
   {
     "id": 6,
-    "name": "Tua Tagovailoa",
-    "position": "QB",
-    "team": "BAL",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 322.60315992661776,
-      "averagePoints": 18.976656466271635,
-      "consistency": 0.75
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.2
-    }
-  },
-  {
-    "id": 7,
     "name": "Joe Burrow",
     "position": "QB",
-    "team": "MIA",
+    "team": "CIN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 334.96567022933766,
-      "averagePoints": 19.70386295466692,
-      "consistency": 0.74
+      "totalPoints": 371.3175168604431,
+      "averagePoints": 21.842206874143713,
+      "consistency": 0.6918215718082907
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.20202789719988734
     }
   },
   {
     "id": 8,
-    "name": "Justin Herbert",
+    "name": "Tua Tagovailoa",
     "position": "QB",
-    "team": "NE",
+    "team": "MIA",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 277.70590426683043,
-      "averagePoints": 16.335641427460615,
-      "consistency": 0.73
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "finger"
-      ],
-      "riskScore": 0.25882352941176473
-    }
-  },
-  {
-    "id": 9,
-    "name": "Trevor Lawrence",
-    "position": "QB",
-    "team": "NYJ",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 276.2163125704977,
-      "averagePoints": 16.248018386499865,
-      "consistency": 0.7200000000000001
+      "totalPoints": 369.0338230255961,
+      "averagePoints": 21.707871942682125,
+      "consistency": 0.74207734919801
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
-    }
-  },
-  {
-    "id": 10,
-    "name": "C.J. Stroud",
-    "position": "QB",
-    "team": "PIT",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 271.93227026150026,
-      "averagePoints": 15.99601589773531,
-      "consistency": 0.7100000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.2
-    }
-  },
-  {
-    "id": 11,
-    "name": "Jared Goff",
-    "position": "QB",
-    "team": "CLE",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 272.1270880606696,
-      "averagePoints": 16.007475768274684,
-      "consistency": 0.7000000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.2474469932675801
     }
   },
   {
     "id": 12,
     "name": "Kirk Cousins",
     "position": "QB",
-    "team": "TEN",
+    "team": "ATL",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 289.4311182023485,
-      "averagePoints": 17.025359894255793,
-      "consistency": 0.6900000000000001
+      "totalPoints": 349.32493561267927,
+      "averagePoints": 20.54852562427525,
+      "consistency": 0.7953288705510648
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.2261430074934537
     }
   },
   {
-    "id": 13,
-    "name": "Jordan Love",
+    "id": 9,
+    "name": "Trevor Lawrence",
     "position": "QB",
-    "team": "IND",
+    "team": "JAX",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 253.31071419325903,
-      "averagePoints": 14.900630246662296,
-      "consistency": 0.68
+      "totalPoints": 346.216086454216,
+      "averagePoints": 20.365652144365647,
+      "consistency": 0.6990608047108958
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.2038600852886686
     }
   },
   {
-    "id": 14,
-    "name": "Brock Purdy",
+    "id": 7,
+    "name": "Justin Herbert",
+    "position": "QB",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 319.95903262005817,
+      "averagePoints": 18.821119565885773,
+      "consistency": 0.7098938010308707
+    },
+    "injury": {
+      "gamesInjured": 2,
+      "injuryHistory": [
+        "finger"
+      ],
+      "riskScore": 0.3176470588235294
+    }
+  },
+  {
+    "id": 11,
+    "name": "Jared Goff",
+    "position": "QB",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 317.64766365616197,
+      "averagePoints": 18.685156685656587,
+      "consistency": 0.6858525454692634
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.18470847003878832
+    }
+  },
+  {
+    "id": 10,
+    "name": "C.J. Stroud",
     "position": "QB",
     "team": "HOU",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 273.58134084996345,
-      "averagePoints": 16.09302004999785,
-      "consistency": 0.67
+      "totalPoints": 316.9255505988165,
+      "averagePoints": 18.642679446989206,
+      "consistency": 0.7510699656832986
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
-    }
-  },
-  {
-    "id": 15,
-    "name": "Russell Wilson",
-    "position": "QB",
-    "team": "DEN",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 259.7667795656675,
-      "averagePoints": 15.28039879798044,
-      "consistency": 0.66
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "calf"
-      ],
-      "riskScore": 0.22941176470588237
-    }
-  },
-  {
-    "id": 16,
-    "name": "Deshaun Watson",
-    "position": "QB",
-    "team": "LV",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 249.94707018124856,
-      "averagePoints": 14.702768834191092,
-      "consistency": 0.65
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.18423274453383037
     }
   },
   {
     "id": 17,
     "name": "Geno Smith",
     "position": "QB",
-    "team": "DAL",
+    "team": "SEA",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 227.15147334419683,
-      "averagePoints": 13.361851373188049,
-      "consistency": 0.64
+      "totalPoints": 278.8587349723746,
+      "averagePoints": 16.403454998374976,
+      "consistency": 0.737188103487392
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.1923546332351843
     }
   },
   {
     "id": 18,
     "name": "Derek Carr",
     "position": "QB",
-    "team": "PHI",
+    "team": "NO",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 212.28493788687388,
-      "averagePoints": 12.48734928746317,
-      "consistency": 0.5733
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.30000000000000004
-    }
-  },
-  {
-    "id": 19,
-    "name": "Baker Mayfield",
-    "position": "QB",
-    "team": "WAS",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 206.96533494583403,
-      "averagePoints": 12.174431467402002,
-      "consistency": 0.6200000000000001
+      "totalPoints": 277.0950499124931,
+      "averagePoints": 16.299708818381948,
+      "consistency": 0.6844338194321572
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.2
+      "riskScore": 0.18635256291355393
+    }
+  },
+  {
+    "id": 21,
+    "name": "Aaron Rodgers",
+    "position": "QB",
+    "team": "NYJ",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 271.63439475304926,
+      "averagePoints": 15.978493809002899,
+      "consistency": 0.6735067180420872
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.23687518711050504
     }
   },
   {
     "id": 20,
     "name": "Justin Fields",
     "position": "QB",
-    "team": "NYG",
+    "team": "PIT",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 221.56213857271183,
-      "averagePoints": 13.033066974865402,
-      "consistency": 0.5551000000000001
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "concussion"
-      ],
-      "riskScore": 0.30000000000000004
-    }
-  },
-  {
-    "id": 21,
-    "name": "Christian McCaffrey",
-    "position": "RB",
-    "team": "KC",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 240.32254173087114,
-      "averagePoints": 14.13662010181595,
-      "consistency": 0.7160000000000001
+      "totalPoints": 270.0365032504782,
+      "averagePoints": 15.884500191204598,
+      "consistency": 0.7324750511465906
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.19710099523001587
     }
   },
   {
-    "id": 22,
-    "name": "Austin Ekeler",
-    "position": "RB",
-    "team": "BUF",
+    "id": 13,
+    "name": "Jordan Love",
+    "position": "QB",
+    "team": "GB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 239.00157696787983,
-      "averagePoints": 14.058916292228226,
-      "consistency": 0.7070500000000001
+      "totalPoints": 263.9156772891435,
+      "averagePoints": 15.524451605243735,
+      "consistency": 0.713307025033079
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.21640670314227906
     }
   },
   {
-    "id": 23,
-    "name": "Bijan Robinson",
-    "position": "RB",
-    "team": "CIN",
+    "id": 16,
+    "name": "Deshaun Watson",
+    "position": "QB",
+    "team": "CLE",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 246.7525829111705,
-      "averagePoints": 14.514857818304147,
-      "consistency": 0.6981
+      "totalPoints": 254.20127753878063,
+      "averagePoints": 14.953016325810625,
+      "consistency": 0.7282966135502346
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.15202660496105366
     }
   },
   {
     "id": 24,
-    "name": "Saquon Barkley",
-    "position": "RB",
-    "team": "JAX",
+    "name": "Daniel Jones",
+    "position": "QB",
+    "team": "NYG",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 237.22322814584382,
-      "averagePoints": 13.954307537990813,
-      "consistency": 0.66605
+      "totalPoints": 249.1318083621664,
+      "averagePoints": 14.654812256598023,
+      "consistency": 0.6378986915707037
     },
     "injury": {
-      "gamesInjured": 2,
+      "gamesInjured": 6,
       "injuryHistory": [
-        "shoulder"
+        "neck",
+        "knee"
       ],
-      "riskScore": 0.44999999999999996
+      "riskScore": 0.5529411764705883
     }
   },
   {
-    "id": 25,
-    "name": "Tony Pollard",
-    "position": "RB",
-    "team": "LAC",
+    "id": 19,
+    "name": "Baker Mayfield",
+    "position": "QB",
+    "team": "TB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 212.23449477655146,
-      "averagePoints": 12.484382045679498,
-      "consistency": 0.6802
+      "totalPoints": 247.12255365132356,
+      "averagePoints": 14.536620803019034,
+      "consistency": 0.7067388719482439
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.23670216493932528
     }
   },
   {
-    "id": 26,
-    "name": "Jonathan Taylor",
-    "position": "RB",
-    "team": "BAL",
+    "id": 22,
+    "name": "Matthew Stafford",
+    "position": "QB",
+    "team": "LAR",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 201.28497125835227,
-      "averagePoints": 11.840292426961899,
-      "consistency": 0.6487499999999999
+      "totalPoints": 246.474665415751,
+      "averagePoints": 14.498509730338293,
+      "consistency": 0.6479695083667888
     },
     "injury": {
-      "gamesInjured": 2,
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.21135506582606123
+    }
+  },
+  {
+    "id": 23,
+    "name": "Kyler Murray",
+    "position": "QB",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 246.0414007518122,
+      "averagePoints": 14.473023573636013,
+      "consistency": 0.6978534673624438
+    },
+    "injury": {
+      "gamesInjured": 8,
       "injuryHistory": [
-        "hamstring"
+        "knee"
       ],
-      "riskScore": 0.44999999999999996
+      "riskScore": 0.6705882352941177
+    }
+  },
+  {
+    "id": 14,
+    "name": "Brock Purdy",
+    "position": "QB",
+    "team": "SF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 240.25539155910883,
+      "averagePoints": 14.132670091712285,
+      "consistency": 0.6962713488645839
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2345926075937273
+    }
+  },
+  {
+    "id": 15,
+    "name": "Russell Wilson",
+    "position": "QB",
+    "team": "PIT",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 237.3139254465247,
+      "averagePoints": 13.959642673324982,
+      "consistency": 0.6623934949197591
+    },
+    "injury": {
+      "gamesInjured": 1,
+      "injuryHistory": [
+        "calf"
+      ],
+      "riskScore": 0.25882352941176473
     }
   },
   {
     "id": 27,
-    "name": "Derrick Henry",
-    "position": "RB",
-    "team": "MIA",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 194.93323054995813,
-      "averagePoints": 11.466660620585772,
-      "consistency": 0.6623
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 28,
-    "name": "Josh Jacobs",
-    "position": "RB",
-    "team": "NE",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 215.31292904782003,
-      "averagePoints": 12.665466414577649,
-      "consistency": 0.65335
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 29,
-    "name": "Najee Harris",
-    "position": "RB",
-    "team": "NYJ",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 182.34312461070672,
-      "averagePoints": 10.726066153570983,
-      "consistency": 0.6444000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 30,
-    "name": "Jahmyr Gibbs",
-    "position": "RB",
-    "team": "PIT",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 182.44704188247871,
-      "averagePoints": 10.732178934263453,
-      "consistency": 0.6141500000000001
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "shoulder"
-      ],
-      "riskScore": 0.44999999999999996
-    }
-  },
-  {
-    "id": 31,
-    "name": "Travis Etienne Jr.",
-    "position": "RB",
-    "team": "CLE",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 172.59987988913497,
-      "averagePoints": 10.152934111125587,
-      "consistency": 0.6265000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 32,
-    "name": "Kenneth Walker III",
-    "position": "RB",
+    "name": "Will Levis",
+    "position": "QB",
     "team": "TEN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 195.34155388582755,
-      "averagePoints": 11.490679640342798,
-      "consistency": 0.61755
+      "totalPoints": 200.11728357329048,
+      "averagePoints": 11.77160491607591,
+      "consistency": 0.5834512319460209
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.2286314769839522
     }
   },
   {
-    "id": 33,
-    "name": "Breece Hall",
-    "position": "RB",
-    "team": "IND",
+    "id": 25,
+    "name": "Sam Howell",
+    "position": "QB",
+    "team": "WAS",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 188.94410670385906,
-      "averagePoints": 11.114359217874062,
-      "consistency": 0.6086
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [
-        "knee"
-      ],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 34,
-    "name": "Aaron Jones",
-    "position": "RB",
-    "team": "HOU",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 156.4907382789087,
-      "averagePoints": 9.205337545818159,
-      "consistency": 0.59965
+      "totalPoints": 188.9480331530723,
+      "averagePoints": 11.11459018547484,
+      "consistency": 0.6187733905713675
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.19455119387260295
     }
   },
   {
     "id": 35,
-    "name": "Rhamondre Stevenson",
-    "position": "RB",
-    "team": "DEN",
+    "name": "Jacoby Brissett",
+    "position": "QB",
+    "team": "NE",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 177.9346006377147,
-      "averagePoints": 10.466741213983218,
-      "consistency": 0.5907
+      "totalPoints": 188.586776811182,
+      "averagePoints": 11.093339812422471,
+      "consistency": 0.6950660934102865
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 36,
-    "name": "Joe Mixon",
-    "position": "RB",
-    "team": "LV",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 163.08126419061688,
-      "averagePoints": 9.593015540624522,
-      "consistency": 0.56225
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.44999999999999996
-    }
-  },
-  {
-    "id": 37,
-    "name": "Rachaad White",
-    "position": "RB",
-    "team": "DAL",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 165.20436050604545,
-      "averagePoints": 9.717903559179144,
-      "consistency": 0.5536
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.44999999999999996
+      "riskScore": 0.16089180751201615
     }
   },
   {
     "id": 38,
-    "name": "James Cook",
-    "position": "RB",
-    "team": "PHI",
+    "name": "Drew Lock",
+    "position": "QB",
+    "team": "NYG",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 138.78576491192936,
-      "averagePoints": 8.16386852423114,
-      "consistency": 0.56385
+      "totalPoints": 183.1391330399205,
+      "averagePoints": 10.772890178818853,
+      "consistency": 0.6413315864267937
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.16947978554233512
     }
   },
   {
-    "id": 39,
-    "name": "Isiah Pacheco",
-    "position": "RB",
-    "team": "WAS",
+    "id": 29,
+    "name": "Mac Jones",
+    "position": "QB",
+    "team": "NE",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 148.24165246377305,
-      "averagePoints": 8.720097203751356,
-      "consistency": 0.5549000000000001
+      "totalPoints": 179.88388085504303,
+      "averagePoints": 10.581404756179001,
+      "consistency": 0.674408692283277
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.23693113037576108
+    }
+  },
+  {
+    "id": 32,
+    "name": "Ryan Tannehill",
+    "position": "QB",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 177.6546813668068,
+      "averagePoints": 10.450275374518048,
+      "consistency": 0.6897499103734214
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2464149409859171
+    }
+  },
+  {
+    "id": 37,
+    "name": "Aidan O'Connell",
+    "position": "QB",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 176.5453647110264,
+      "averagePoints": 10.385021453589788,
+      "consistency": 0.6790622045616191
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.178120374791831
+    }
+  },
+  {
+    "id": 30,
+    "name": "Kenny Pickett",
+    "position": "QB",
+    "team": "PHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 174.16123571497457,
+      "averagePoints": 10.244778571469093,
+      "consistency": 0.6969830393266678
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20945288310478055
     }
   },
   {
     "id": 40,
-    "name": "Alvin Kamara",
-    "position": "RB",
-    "team": "NYG",
+    "name": "Caleb Williams",
+    "position": "QB",
+    "team": "CHI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 142.12214680173602,
-      "averagePoints": 8.36012628245506,
-      "consistency": 0.54595
+      "totalPoints": 169.95918639431642,
+      "averagePoints": 9.997599199665672,
+      "consistency": 0.6481183431202682
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.35
+      "riskScore": 0.20058607808998258
     }
   },
   {
-    "id": 41,
-    "name": "Tyreek Hill",
-    "position": "WR",
-    "team": "KC",
+    "id": 26,
+    "name": "Bryce Young",
+    "position": "QB",
+    "team": "CAR",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 191.40477312620706,
-      "averagePoints": 11.259104301541592,
-      "consistency": 0.8
+      "totalPoints": 168.96054811832767,
+      "averagePoints": 9.938855771666333,
+      "consistency": 0.6373658913365228
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.187470266747464
+    }
+  },
+  {
+    "id": 31,
+    "name": "Gardner Minshew",
+    "position": "QB",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 166.70978406134807,
+      "averagePoints": 9.80645788596165,
+      "consistency": 0.5825377606596983
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2197219868029911
+    }
+  },
+  {
+    "id": 36,
+    "name": "Tyler Huntley",
+    "position": "QB",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 165.5609274259103,
+      "averagePoints": 9.738878083877077,
+      "consistency": 0.6862279747993618
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.21648788160837978
+    }
+  },
+  {
+    "id": 28,
+    "name": "Anthony Richardson",
+    "position": "QB",
+    "team": "IND",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 164.28831833533604,
+      "averagePoints": 9.664018725608003,
+      "consistency": 0.5616803841809945
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20766238620789765
+    }
+  },
+  {
+    "id": 34,
+    "name": "Jameis Winston",
+    "position": "QB",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 159.25869820021902,
+      "averagePoints": 9.368158717659941,
+      "consistency": 0.6648705740339531
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2289165246470218
+    }
+  },
+  {
+    "id": 33,
+    "name": "Jimmy Garoppolo",
+    "position": "QB",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 158.45372265689127,
+      "averagePoints": 9.320807215111252,
+      "consistency": 0.5560047372110242
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.16956673800810904
+    }
+  },
+  {
+    "id": 39,
+    "name": "Jarrett Stidham",
+    "position": "QB",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 155.44518233786314,
+      "averagePoints": 9.14383425516842,
+      "consistency": 0.588699102391142
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.18023448012133114
     }
   },
   {
     "id": 42,
-    "name": "CeeDee Lamb",
-    "position": "WR",
-    "team": "BUF",
+    "name": "Austin Ekeler",
+    "position": "RB",
+    "team": "WAS",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 187.31385786156716,
-      "averagePoints": 11.018462227151009,
-      "consistency": 0.79
+      "totalPoints": 374.95720615108326,
+      "averagePoints": 22.056306244181368,
+      "consistency": 0.830622334434043
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.3173890774923649
     }
   },
   {
-    "id": 43,
-    "name": "Justin Jefferson",
-    "position": "WR",
-    "team": "CIN",
+    "id": 41,
+    "name": "Christian McCaffrey",
+    "position": "RB",
+    "team": "SF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 203.1659879160127,
-      "averagePoints": 11.950940465647806,
-      "consistency": 0.6981
+      "totalPoints": 373.5652449677872,
+      "averagePoints": 21.974426174575715,
+      "consistency": 0.7543594558003023
     },
     "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "concussion"
-      ],
-      "riskScore": 0.35
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.39583616753555684
     }
   },
   {
     "id": 44,
-    "name": "Ja'Marr Chase",
-    "position": "WR",
-    "team": "JAX",
+    "name": "Saquon Barkley",
+    "position": "RB",
+    "team": "PHI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 198.9379626517558,
-      "averagePoints": 11.702233097162107,
-      "consistency": 0.68915
+      "totalPoints": 347.3983750176542,
+      "averagePoints": 20.435198530450247,
+      "consistency": 0.8652383845955144
     },
     "injury": {
       "gamesInjured": 0,
-      "injuryHistory": [
-        "knee"
-      ],
-      "riskScore": 0.35
+      "injuryHistory": [],
+      "riskScore": 0.369188230989658
+    }
+  },
+  {
+    "id": 43,
+    "name": "Bijan Robinson",
+    "position": "RB",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 325.2807715859574,
+      "averagePoints": 19.13416303446808,
+      "consistency": 0.7993939777675704
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.36533886069427973
     }
   },
   {
     "id": 45,
-    "name": "A.J. Brown",
-    "position": "WR",
-    "team": "LAC",
+    "name": "Tony Pollard",
+    "position": "RB",
+    "team": "TEN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 162.2477147785898,
-      "averagePoints": 9.543983222269988,
-      "consistency": 0.6802
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "shoulder"
-      ],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 46,
-    "name": "Stefon Diggs",
-    "position": "WR",
-    "team": "BAL",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 164.0229215293484,
-      "averagePoints": 9.6484071487852,
-      "consistency": 0.75
+      "totalPoints": 310.25818813523887,
+      "averagePoints": 18.250481655014053,
+      "consistency": 0.8276510634605598
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 47,
-    "name": "Amon-Ra St. Brown",
-    "position": "WR",
-    "team": "MIA",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 161.12303859011823,
-      "averagePoints": 9.477825799418719,
-      "consistency": 0.6623
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "shoulder"
-      ],
-      "riskScore": 0.35
+      "riskScore": 0.3897727700745104
     }
   },
   {
     "id": 48,
-    "name": "Davante Adams",
-    "position": "WR",
-    "team": "NE",
+    "name": "Josh Jacobs",
+    "position": "RB",
+    "team": "GB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 151.7858847691013,
-      "averagePoints": 8.92858145700596,
-      "consistency": 0.73
+      "totalPoints": 292.93034072432454,
+      "averagePoints": 17.23119651319556,
+      "consistency": 0.6976670093930649
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 49,
-    "name": "Cooper Kupp",
-    "position": "WR",
-    "team": "NYJ",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 152.05224686619889,
-      "averagePoints": 8.944249815658758,
-      "consistency": 0.6405882352941177
-    },
-    "injury": {
-      "gamesInjured": 4,
-      "injuryHistory": [
-        "hamstring"
-      ],
-      "riskScore": 0.36764705882352944
-    }
-  },
-  {
-    "id": 50,
-    "name": "Garrett Wilson",
-    "position": "WR",
-    "team": "PIT",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 148.95141053322564,
-      "averagePoints": 8.761847678425038,
-      "consistency": 0.7100000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 51,
-    "name": "Chris Olave",
-    "position": "WR",
-    "team": "CLE",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 148.47037241945324,
-      "averagePoints": 8.733551318791367,
-      "consistency": 0.6265000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [
-        "knee"
-      ],
-      "riskScore": 0.35
+      "riskScore": 0.32767749686908765
     }
   },
   {
     "id": 52,
-    "name": "DK Metcalf",
-    "position": "WR",
-    "team": "TEN",
+    "name": "Kenneth Walker III",
+    "position": "RB",
+    "team": "SEA",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 141.1185862805854,
-      "averagePoints": 8.30109331062267,
-      "consistency": 0.6900000000000001
+      "totalPoints": 288.6307284348623,
+      "averagePoints": 16.978278143227193,
+      "consistency": 0.7237774506055354
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.335685597912314
+    }
+  },
+  {
+    "id": 46,
+    "name": "Jonathan Taylor",
+    "position": "RB",
+    "team": "IND",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 281.7392025954744,
+      "averagePoints": 16.572894270322024,
+      "consistency": 0.7641665905521919
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.353114052127993
+    }
+  },
+  {
+    "id": 51,
+    "name": "Breece Hall",
+    "position": "RB",
+    "team": "NYJ",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 277.72853903772057,
+      "averagePoints": 16.336972884571797,
+      "consistency": 0.6831144405476961
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3946279960892489
+    }
+  },
+  {
+    "id": 47,
+    "name": "Derrick Henry",
+    "position": "RB",
+    "team": "BAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 274.4891602276952,
+      "averagePoints": 16.146421189864423,
+      "consistency": 0.7296121382805167
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3924167794473916
+    }
+  },
+  {
+    "id": 50,
+    "name": "Travis Etienne Jr.",
+    "position": "RB",
+    "team": "JAX",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 264.43303083755063,
+      "averagePoints": 15.554884166914743,
+      "consistency": 0.6767107562428059
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.39219070217368557
+    }
+  },
+  {
+    "id": 49,
+    "name": "Nick Chubb",
+    "position": "RB",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 246.44521176379757,
+      "averagePoints": 14.496777162576327,
+      "consistency": 0.7396066835063467
+    },
+    "injury": {
+      "gamesInjured": 8,
+      "injuryHistory": [
+        "knee"
+      ],
+      "riskScore": 0.85
     }
   },
   {
     "id": 53,
-    "name": "DeVonta Smith",
-    "position": "WR",
-    "team": "IND",
+    "name": "Najee Harris",
+    "position": "RB",
+    "team": "PIT",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 146.41486166529648,
-      "averagePoints": 8.612638921488028,
-      "consistency": 0.6086
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.35
-    }
-  },
-  {
-    "id": 54,
-    "name": "Jaylen Waddle",
-    "position": "WR",
-    "team": "HOU",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 129.49515242082327,
-      "averagePoints": 7.617361907107251,
-      "consistency": 0.67
+      "totalPoints": 218.38518047185312,
+      "averagePoints": 12.846187086579596,
+      "consistency": 0.6748909203269189
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 55,
-    "name": "Keenan Allen",
-    "position": "WR",
-    "team": "DEN",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 140.96705813335706,
-      "averagePoints": 8.292179890197474,
-      "consistency": 0.5872058823529411
-    },
-    "injury": {
-      "gamesInjured": 4,
-      "injuryHistory": [
-        "heel"
-      ],
-      "riskScore": 0.36764705882352944
-    }
-  },
-  {
-    "id": 56,
-    "name": "Mike Evans",
-    "position": "WR",
-    "team": "LV",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 122.40592831318702,
-      "averagePoints": 7.200348724305119,
-      "consistency": 0.65
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "hamstring"
-      ],
-      "riskScore": 0.27941176470588236
+      "riskScore": 0.37195067709281365
     }
   },
   {
     "id": 57,
-    "name": "Tee Higgins",
-    "position": "WR",
-    "team": "DAL",
+    "name": "Joe Mixon",
+    "position": "RB",
+    "team": "HOU",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 113.03661580849695,
-      "averagePoints": 6.649212694617468,
-      "consistency": 0.64
+      "totalPoints": 212.02849565686134,
+      "averagePoints": 12.472264450403609,
+      "consistency": 0.7245081220416124
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.39658518794294756
     }
   },
   {
-    "id": 58,
+    "id": 63,
     "name": "Calvin Ridley",
-    "position": "WR",
-    "team": "PHI",
+    "position": "RB",
+    "team": "TEN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 118.11458945550056,
-      "averagePoints": 6.947917026794151,
-      "consistency": 0.63
+      "totalPoints": 209.9631713842421,
+      "averagePoints": 12.350774787308358,
+      "consistency": 0.5711726199102685
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.3545926801856339
+    }
+  },
+  {
+    "id": 55,
+    "name": "Aaron Jones",
+    "position": "RB",
+    "team": "MIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 208.52218751303542,
+      "averagePoints": 12.266011030178554,
+      "consistency": 0.7466961186306347
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.37800959729038186
+    }
+  },
+  {
+    "id": 62,
+    "name": "David Montgomery",
+    "position": "RB",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 206.2776610041405,
+      "averagePoints": 12.133980059067088,
+      "consistency": 0.676298564317279
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.34544130192947603
     }
   },
   {
     "id": 59,
-    "name": "Terry McLaurin",
-    "position": "WR",
-    "team": "WAS",
+    "name": "James Cook",
+    "position": "RB",
+    "team": "BUF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 99.5499261322148,
-      "averagePoints": 5.855878007777341,
-      "consistency": 0.6200000000000001
+      "totalPoints": 206.11106953788908,
+      "averagePoints": 12.124180561052299,
+      "consistency": 0.721208055167841
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.3932178592792249
     }
   },
   {
     "id": 60,
-    "name": "Brandon Aiyuk",
-    "position": "WR",
-    "team": "NYG",
+    "name": "Isiah Pacheco",
+    "position": "RB",
+    "team": "KC",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 95.4213343512576,
-      "averagePoints": 5.613019667721035,
-      "consistency": 0.6100000000000001
+      "totalPoints": 205.33648795160425,
+      "averagePoints": 12.078616938329661,
+      "consistency": 0.7005542208460207
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.25
+      "riskScore": 0.35151763050131507
+    }
+  },
+  {
+    "id": 54,
+    "name": "Jahmyr Gibbs",
+    "position": "RB",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 194.12938706829325,
+      "averagePoints": 11.419375709899603,
+      "consistency": 0.7276956434586107
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3079770052180979
+    }
+  },
+  {
+    "id": 64,
+    "name": "D'Andre Swift",
+    "position": "RB",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 186.83731274324478,
+      "averagePoints": 10.99043016136734,
+      "consistency": 0.6121943924694231
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.39924359398632525
+    }
+  },
+  {
+    "id": 58,
+    "name": "Rachaad White",
+    "position": "RB",
+    "team": "TB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 186.54945720593835,
+      "averagePoints": 10.973497482702257,
+      "consistency": 0.6992836562997464
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3491804221290644
     }
   },
   {
     "id": 61,
+    "name": "Alvin Kamara",
+    "position": "RB",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 185.17872669440297,
+      "averagePoints": 10.892866276141351,
+      "consistency": 0.6807267244332906
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.38617557117706647
+    }
+  },
+  {
+    "id": 56,
+    "name": "Rhamondre Stevenson",
+    "position": "RB",
+    "team": "NE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 184.29370561893467,
+      "averagePoints": 10.84080621287851,
+      "consistency": 0.772299047688282
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.37127226816043446
+    }
+  },
+  {
+    "id": 70,
+    "name": "Zack Moss",
+    "position": "RB",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 135.72590069277138,
+      "averagePoints": 7.983876511339493,
+      "consistency": 0.6070086720675834
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.354481313373594
+    }
+  },
+  {
+    "id": 71,
+    "name": "Brian Robinson Jr.",
+    "position": "RB",
+    "team": "WAS",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 134.21235626200925,
+      "averagePoints": 7.894844486000544,
+      "consistency": 0.5609088883645361
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.33672906559935695
+    }
+  },
+  {
+    "id": 68,
+    "name": "Miles Sanders",
+    "position": "RB",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 131.57955501195846,
+      "averagePoints": 7.739973824232851,
+      "consistency": 0.6200539183380804
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3692281249677051
+    }
+  },
+  {
+    "id": 66,
+    "name": "Javonte Williams",
+    "position": "RB",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 130.05676798195938,
+      "averagePoints": 7.650398116585846,
+      "consistency": 0.6247566137705787
+    },
+    "injury": {
+      "gamesInjured": 4,
+      "injuryHistory": [
+        "knee"
+      ],
+      "riskScore": 0.5852941176470587
+    }
+  },
+  {
+    "id": 73,
+    "name": "Khalil Herbert",
+    "position": "RB",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 127.95123325472292,
+      "averagePoints": 7.52654313263076,
+      "consistency": 0.5831715996928972
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3724648731979924
+    }
+  },
+  {
+    "id": 65,
+    "name": "Dameon Pierce",
+    "position": "RB",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 124.05574959350692,
+      "averagePoints": 7.297397034912172,
+      "consistency": 0.674100034304971
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3031403504131683
+    }
+  },
+  {
+    "id": 72,
+    "name": "Jaylen Warren",
+    "position": "RB",
+    "team": "PIT",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 120.3562113915645,
+      "averagePoints": 7.079777140680265,
+      "consistency": 0.5541665976381904
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3408786091736846
+    }
+  },
+  {
+    "id": 75,
+    "name": "Ezekiel Elliott",
+    "position": "RB",
+    "team": "NE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 118.84041588548334,
+      "averagePoints": 6.990612699146078,
+      "consistency": 0.6652031363644879
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.37479619589392005
+    }
+  },
+  {
+    "id": 69,
+    "name": "Alexander Mattison",
+    "position": "RB",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 117.6773894306663,
+      "averagePoints": 6.922199378274488,
+      "consistency": 0.6264323412656323
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3245409934317014
+    }
+  },
+  {
+    "id": 67,
+    "name": "Cam Akers",
+    "position": "RB",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 117.4311088105876,
+      "averagePoints": 6.907712282975742,
+      "consistency": 0.6267014149947735
+    },
+    "injury": {
+      "gamesInjured": 8,
+      "injuryHistory": [
+        "achilles"
+      ],
+      "riskScore": 0.85
+    }
+  },
+  {
+    "id": 76,
+    "name": "AJ Dillon",
+    "position": "RB",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 113.69344005924839,
+      "averagePoints": 6.6878494152499055,
+      "consistency": 0.6204283895603224
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.31677826938881065
+    }
+  },
+  {
+    "id": 74,
+    "name": "Gus Edwards",
+    "position": "RB",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 113.08540427741765,
+      "averagePoints": 6.652082604553979,
+      "consistency": 0.6119874293357889
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3737406452624843
+    }
+  },
+  {
+    "id": 78,
+    "name": "Tyjae Spears",
+    "position": "RB",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 77.15879167030323,
+      "averagePoints": 4.538752451194307,
+      "consistency": 0.5813934058383617
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.31933165153467113
+    }
+  },
+  {
+    "id": 77,
+    "name": "Chuba Hubbard",
+    "position": "RB",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 74.44798393104203,
+      "averagePoints": 4.379293172414237,
+      "consistency": 0.5715624461728032
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.35246359407322086
+    }
+  },
+  {
+    "id": 80,
+    "name": "Roschon Johnson",
+    "position": "RB",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 68.83429961828583,
+      "averagePoints": 4.0490764481344605,
+      "consistency": 0.6885646502186352
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3436997335790412
+    }
+  },
+  {
+    "id": 82,
+    "name": "Jonathon Brooks",
+    "position": "RB",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 68.3504265659585,
+      "averagePoints": 4.020613327409324,
+      "consistency": 0.6191382888534357
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3696086011682934
+    }
+  },
+  {
+    "id": 89,
+    "name": "Isaac Guerendo",
+    "position": "RB",
+    "team": "SF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 67.65418551969765,
+      "averagePoints": 3.9796579717469207,
+      "consistency": 0.5560081184460087
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3721295663331634
+    }
+  },
+  {
+    "id": 79,
+    "name": "Tank Bigsby",
+    "position": "RB",
+    "team": "JAX",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 65.60930376930817,
+      "averagePoints": 3.8593708099593043,
+      "consistency": 0.6907930432617695
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.34227996698718904
+    }
+  },
+  {
+    "id": 84,
+    "name": "Blake Corum",
+    "position": "RB",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 63.6135421014895,
+      "averagePoints": 3.7419730647935,
+      "consistency": 0.6533289588773022
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.32917143472544075
+    }
+  },
+  {
+    "id": 85,
+    "name": "Ray Davis",
+    "position": "RB",
+    "team": "BUF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 63.24849065051879,
+      "averagePoints": 3.720499450030517,
+      "consistency": 0.5522940634888084
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.31334207253725255
+    }
+  },
+  {
+    "id": 87,
+    "name": "Jaylen Wright",
+    "position": "RB",
+    "team": "MIA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 62.15395891527292,
+      "averagePoints": 3.656115230310172,
+      "consistency": 0.5897669667677318
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.38959831106538906
+    }
+  },
+  {
+    "id": 81,
+    "name": "Marvin Harrison Jr.",
+    "position": "RB",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 61.20640042127738,
+      "averagePoints": 3.6003764953692574,
+      "consistency": 0.5893567056309974
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3750902694629704
+    }
+  },
+  {
+    "id": 83,
+    "name": "Trey Benson",
+    "position": "RB",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 60.17279606828862,
+      "averagePoints": 3.539576239311095,
+      "consistency": 0.6878167178619815
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.33087523463593566
+    }
+  },
+  {
+    "id": 90,
+    "name": "Kimani Vidal",
+    "position": "RB",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 58.85867445027182,
+      "averagePoints": 3.462274967663048,
+      "consistency": 0.5954110449044021
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.390734725954928
+    }
+  },
+  {
+    "id": 86,
+    "name": "MarShawn Lloyd",
+    "position": "RB",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 58.40794364976154,
+      "averagePoints": 3.4357613911624436,
+      "consistency": 0.5693837378958049
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.35833542067600593
+    }
+  },
+  {
+    "id": 88,
+    "name": "Audric Estime",
+    "position": "RB",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 56.652999959063905,
+      "averagePoints": 3.3325294093567,
+      "consistency": 0.6143821982418937
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3862602130627213
+    }
+  },
+  {
+    "id": 153,
+    "name": "Mark Andrews",
+    "position": "TE",
+    "team": "BAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 261.68736549415036,
+      "averagePoints": 15.393374440832375,
+      "consistency": 0.8822993331887496
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.30560361637841676
+    }
+  },
+  {
+    "id": 151,
     "name": "Travis Kelce",
     "position": "TE",
     "team": "KC",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 141.01979362040944,
-      "averagePoints": 8.295281977671143,
-      "consistency": 0.8
+      "totalPoints": 244.4151523825298,
+      "averagePoints": 14.377361904854695,
+      "consistency": 0.7905980469166122
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.2873694769309488
     }
   },
   {
-    "id": 62,
+    "id": 152,
     "name": "T.J. Hockenson",
     "position": "TE",
-    "team": "BUF",
+    "team": "MIN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 144.52228747492245,
-      "averagePoints": 8.501311027936614,
-      "consistency": 0.79
+      "totalPoints": 230.05113338051788,
+      "averagePoints": 13.5324196106187,
+      "consistency": 0.8173618795369396
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.2639355309753477
     }
   },
   {
-    "id": 63,
-    "name": "Mark Andrews",
-    "position": "TE",
-    "team": "CIN",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 128.42042446418154,
-      "averagePoints": 7.554142615540091,
-      "consistency": 0.78
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.3
-    }
-  },
-  {
-    "id": 64,
+    "id": 154,
     "name": "George Kittle",
     "position": "TE",
-    "team": "JAX",
+    "team": "SF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 147.1639724809621,
-      "averagePoints": 8.656704263586006,
-      "consistency": 0.77
+      "totalPoints": 194.03907629751902,
+      "averagePoints": 11.414063311618765,
+      "consistency": 0.8626078361660164
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.32988931242769476
     }
   },
   {
-    "id": 65,
-    "name": "Darren Waller",
-    "position": "TE",
-    "team": "LAC",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 136.78083351034024,
-      "averagePoints": 8.045931382961191,
-      "consistency": 0.6312470588235294
-    },
-    "injury": {
-      "gamesInjured": 8,
-      "injuryHistory": [
-        "hamstring"
-      ],
-      "riskScore": 0.5647058823529412
-    }
-  },
-  {
-    "id": 66,
+    "id": 156,
     "name": "Dallas Goedert",
     "position": "TE",
-    "team": "BAL",
+    "team": "PHI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 122.28563332679639,
-      "averagePoints": 7.193272548635082,
-      "consistency": 0.6692647058823529
+      "totalPoints": 169.41969464746168,
+      "averagePoints": 9.965864391027157,
+      "consistency": 0.7688364550877753
     },
     "injury": {
       "gamesInjured": 2,
       "injuryHistory": [
         "forearm"
       ],
-      "riskScore": 0.3588235294117647
+      "riskScore": 0.41764705882352937
     }
   },
   {
-    "id": 67,
-    "name": "Kyle Pitts",
+    "id": 157,
+    "name": "Darren Waller",
     "position": "TE",
-    "team": "MIA",
+    "team": "NYG",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 120.14367293389809,
-      "averagePoints": 7.067274878464594,
-      "consistency": 0.6342235294117647
+      "totalPoints": 166.57080591160877,
+      "averagePoints": 9.798282700682869,
+      "consistency": 0.7713666369440899
+    },
+    "injury": {
+      "gamesInjured": 8,
+      "injuryHistory": [
+        "hamstring"
+      ],
+      "riskScore": 0.8
+    }
+  },
+  {
+    "id": 155,
+    "name": "Sam LaPorta",
+    "position": "TE",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 159.47341651434502,
+      "averagePoints": 9.380789206726178,
+      "consistency": 0.7890880279173719
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2575600012140682
+    }
+  },
+  {
+    "id": 158,
+    "name": "Kyle Pitts",
+    "position": "TE",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 154.71066108272748,
+      "averagePoints": 9.100627122513382,
+      "consistency": 0.7786067865222277
     },
     "injury": {
       "gamesInjured": 6,
       "injuryHistory": [
         "knee"
       ],
-      "riskScore": 0.4764705882352941
+      "riskScore": 0.6529411764705882
     }
   },
   {
-    "id": 68,
-    "name": "Evan Engram",
+    "id": 161,
+    "name": "Cole Kmet",
     "position": "TE",
-    "team": "NE",
+    "team": "CHI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 123.35025010593644,
-      "averagePoints": 7.255897065055085,
-      "consistency": 0.6424
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [
-        "concussion"
-      ],
-      "riskScore": 0.4
-    }
-  },
-  {
-    "id": 69,
-    "name": "David Njoku",
-    "position": "TE",
-    "team": "NYJ",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 106.20376240364641,
-      "averagePoints": 6.2472801413909655,
-      "consistency": 0.7200000000000001
+      "totalPoints": 122.52030568793161,
+      "averagePoints": 7.207076805172448,
+      "consistency": 0.7884605253777706
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.25018706781294786
     }
   },
   {
-    "id": 70,
-    "name": "Sam LaPorta",
+    "id": 165,
+    "name": "Pat Freiermuth",
     "position": "TE",
     "team": "PIT",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 114.22198784083001,
-      "averagePoints": 6.718940461225294,
-      "consistency": 0.7100000000000001
+      "totalPoints": 116.5120995973024,
+      "averagePoints": 6.853652917488376,
+      "consistency": 0.6577749450647171
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.3231195518869292
     }
   },
   {
-    "id": 71,
-    "name": "Cole Kmet",
+    "id": 160,
+    "name": "David Njoku",
     "position": "TE",
     "team": "CLE",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 105.18876684448223,
-      "averagePoints": 6.18757452026366,
-      "consistency": 0.7000000000000001
+      "totalPoints": 114.789575587422,
+      "averagePoints": 6.752327975730705,
+      "consistency": 0.6526827093747185
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.25052317236987787
     }
   },
   {
-    "id": 72,
-    "name": "Jake Ferguson",
+    "id": 159,
+    "name": "Evan Engram",
     "position": "TE",
-    "team": "TEN",
+    "team": "JAX",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 102.17522024496658,
-      "averagePoints": 6.010307073233328,
-      "consistency": 0.6900000000000001
+      "totalPoints": 114.20072972665186,
+      "averagePoints": 6.717689983920698,
+      "consistency": 0.7838066702327451
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.32277884462965256
     }
   },
   {
-    "id": 73,
-    "name": "Dalton Schultz",
-    "position": "TE",
-    "team": "IND",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 92.96333204306863,
-      "averagePoints": 5.468431296651096,
-      "consistency": 0.68
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.3
-    }
-  },
-  {
-    "id": 74,
-    "name": "Tyler Higbee",
-    "position": "TE",
-    "team": "HOU",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 98.91701018893735,
-      "averagePoints": 5.818647658172786,
-      "consistency": 0.67
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.3
-    }
-  },
-  {
-    "id": 75,
-    "name": "Pat Freiermuth",
-    "position": "TE",
-    "team": "DEN",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 92.05075296953149,
-      "averagePoints": 5.414750174678323,
-      "consistency": 0.66
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.3
-    }
-  },
-  {
-    "id": 76,
+    "id": 166,
     "name": "Trey McBride",
     "position": "TE",
-    "team": "LV",
+    "team": "ARI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 92.73668766762478,
-      "averagePoints": 5.455099274566163,
-      "consistency": 0.65
+      "totalPoints": 113.94608369660934,
+      "averagePoints": 6.702710805682902,
+      "consistency": 0.7399834432450203
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.31201339829228425
     }
   },
   {
-    "id": 77,
-    "name": "Dalton Kincaid",
+    "id": 162,
+    "name": "Jake Ferguson",
     "position": "TE",
     "team": "DAL",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 79.35408061575669,
-      "averagePoints": 4.667887095044511,
-      "consistency": 0.64
+      "totalPoints": 105.528061923198,
+      "averagePoints": 6.207533054305764,
+      "consistency": 0.7687828580664604
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.28509835542257017
     }
   },
   {
-    "id": 78,
-    "name": "Michael Mayer",
+    "id": 163,
+    "name": "Dalton Schultz",
     "position": "TE",
-    "team": "PHI",
+    "team": "HOU",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 82.38189646958672,
-      "averagePoints": 4.8459939099756895,
-      "consistency": 0.63
+      "totalPoints": 103.30545078218688,
+      "averagePoints": 6.076791222481582,
+      "consistency": 0.6859133470281022
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.29909769628731536
     }
   },
   {
-    "id": 79,
-    "name": "Greg Dulcich",
+    "id": 164,
+    "name": "Tyler Higbee",
+    "position": "TE",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 98.67347471968621,
+      "averagePoints": 5.8043220423344835,
+      "consistency": 0.7862736656649603
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3006872425215717
+    }
+  },
+  {
+    "id": 181,
+    "name": "Tyler Conklin",
+    "position": "TE",
+    "team": "NYJ",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 91.09641645892017,
+      "averagePoints": 5.358612732877657,
+      "consistency": 0.5596146192457296
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.28137079568633017
+    }
+  },
+  {
+    "id": 184,
+    "name": "Dawson Knox",
+    "position": "TE",
+    "team": "BUF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 89.39034807195311,
+      "averagePoints": 5.258255768938419,
+      "consistency": 0.5533395145518294
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3367448810147201
+    }
+  },
+  {
+    "id": 182,
+    "name": "Mike Gesicki",
+    "position": "TE",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 85.13673641814975,
+      "averagePoints": 5.008043318714691,
+      "consistency": 0.5721205586516699
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2681455433675901
+    }
+  },
+  {
+    "id": 187,
+    "name": "Durham Smythe",
+    "position": "TE",
+    "team": "MIA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 83.53033833011872,
+      "averagePoints": 4.913549313536396,
+      "consistency": 0.6633970299665667
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.28002059595821926
+    }
+  },
+  {
+    "id": 183,
+    "name": "Hayden Hurst",
+    "position": "TE",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 81.04127841312581,
+      "averagePoints": 4.767134024301519,
+      "consistency": 0.5880293358513118
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2592108589519312
+    }
+  },
+  {
+    "id": 185,
+    "name": "Zach Ertz",
     "position": "TE",
     "team": "WAS",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 71.01386821222071,
-      "averagePoints": 4.177286365424748,
-      "consistency": 0.6200000000000001
+      "totalPoints": 79.86391684996555,
+      "averagePoints": 4.69787746176268,
+      "consistency": 0.5970573046913187
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.3
+      "riskScore": 0.27246167015533446
     }
   },
   {
-    "id": 80,
-    "name": "Chigoziem Okonkwo",
+    "id": 188,
+    "name": "Noah Gray",
     "position": "TE",
-    "team": "NYG",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 70.75279369626736,
-      "averagePoints": 4.161929040956903,
-      "consistency": 0.6100000000000001
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.3
-    }
-  },
-  {
-    "id": 81,
-    "name": "Justin Tucker",
-    "position": "K",
     "team": "KC",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 151.11679305917514,
-      "averagePoints": 8.88922312112795,
-      "consistency": 0.8
+      "totalPoints": 76.93647076936807,
+      "averagePoints": 4.525674751139299,
+      "consistency": 0.6272095055817253
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.2591921217582376
     }
   },
   {
-    "id": 82,
-    "name": "Harrison Butker",
-    "position": "K",
+    "id": 189,
+    "name": "Brock Bowers",
+    "position": "TE",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 73.37030101811303,
+      "averagePoints": 4.315900059889001,
+      "consistency": 0.558972176452327
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3119298499134902
+    }
+  },
+  {
+    "id": 186,
+    "name": "Logan Thomas",
+    "position": "TE",
+    "team": "WAS",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 72.18657096749293,
+      "averagePoints": 4.24626888044076,
+      "consistency": 0.6979164021643953
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.26021336433563813
+    }
+  },
+  {
+    "id": 168,
+    "name": "Michael Mayer",
+    "position": "TE",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 71.53336178530247,
+      "averagePoints": 4.207844810900146,
+      "consistency": 0.7868310940225772
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.28577883488253647
+    }
+  },
+  {
+    "id": 173,
+    "name": "Taysom Hill",
+    "position": "TE",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 68.60817234507661,
+      "averagePoints": 4.035774843828036,
+      "consistency": 0.6854049188976632
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3221369192969509
+    }
+  },
+  {
+    "id": 167,
+    "name": "Dalton Kincaid",
+    "position": "TE",
     "team": "BUF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 142.5128351603666,
-      "averagePoints": 8.3831079506098,
-      "consistency": 0.79
+      "totalPoints": 67.52407431363622,
+      "averagePoints": 3.9720043713903657,
+      "consistency": 0.7170663786901864
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.2773121161793895
     }
   },
   {
-    "id": 83,
-    "name": "Daniel Carlson",
-    "position": "K",
-    "team": "CIN",
+    "id": 175,
+    "name": "Tucker Kraft",
+    "position": "TE",
+    "team": "GB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 132.7591024331058,
-      "averagePoints": 7.809358966653282,
-      "consistency": 0.78
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "hamstring"
-      ],
-      "riskScore": 0.15000000000000002
-    }
-  },
-  {
-    "id": 84,
-    "name": "Tyler Bass",
-    "position": "K",
-    "team": "JAX",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 123.9536826359461,
-      "averagePoints": 7.291393096232123,
-      "consistency": 0.77
+      "totalPoints": 65.42507024407651,
+      "averagePoints": 3.8485335437692063,
+      "consistency": 0.6762951337461687
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.2832478955228518
     }
   },
   {
-    "id": 85,
-    "name": "Jake Elliott",
-    "position": "K",
-    "team": "LAC",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 142.01912193535946,
-      "averagePoints": 8.354065996197615,
-      "consistency": 0.76
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.05
-    }
-  },
-  {
-    "id": 86,
-    "name": "Jason Myers",
-    "position": "K",
+    "id": 177,
+    "name": "Isaiah Likely",
+    "position": "TE",
     "team": "BAL",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 129.7580097516375,
-      "averagePoints": 7.6328241030375,
-      "consistency": 0.75
+      "totalPoints": 65.05515740447122,
+      "averagePoints": 3.826773964968895,
+      "consistency": 0.6453011468582899
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.32748796227121973
     }
   },
   {
-    "id": 87,
-    "name": "Evan McPherson",
-    "position": "K",
-    "team": "MIA",
+    "id": 190,
+    "name": "Ja'Tavion Sanders",
+    "position": "TE",
+    "team": "CAR",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 117.18839019149394,
-      "averagePoints": 6.893434717146702,
-      "consistency": 0.74
+      "totalPoints": 64.91404875312593,
+      "averagePoints": 3.818473456066231,
+      "consistency": 0.6964841082659662
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.2824472793058644
     }
   },
   {
-    "id": 88,
-    "name": "Younghoe Koo",
-    "position": "K",
+    "id": 178,
+    "name": "Juwan Johnson",
+    "position": "TE",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 63.60557359536954,
+      "averagePoints": 3.741504329139385,
+      "consistency": 0.5848995204841363
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.34141429402347073
+    }
+  },
+  {
+    "id": 172,
+    "name": "Jonnu Smith",
+    "position": "TE",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 62.97869661405616,
+      "averagePoints": 3.7046292125915388,
+      "consistency": 0.5540813059821742
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2672875981556795
+    }
+  },
+  {
+    "id": 171,
+    "name": "Hunter Henry",
+    "position": "TE",
     "team": "NE",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 129.8023278148479,
-      "averagePoints": 7.635431047932229,
-      "consistency": 0.73
+      "totalPoints": 62.09305880081716,
+      "averagePoints": 3.6525328706363034,
+      "consistency": 0.6804885620572054
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.3054509580914112
     }
   },
   {
-    "id": 89,
-    "name": "Cameron Dicker",
-    "position": "K",
-    "team": "NYJ",
+    "id": 176,
+    "name": "Cade Otton",
+    "position": "TE",
+    "team": "TB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 114.61415292463431,
-      "averagePoints": 6.742008995566724,
-      "consistency": 0.7200000000000001
+      "totalPoints": 62.000695555793435,
+      "averagePoints": 3.6470997385760846,
+      "consistency": 0.645432410717753
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.3140592277299981
     }
   },
   {
-    "id": 90,
-    "name": "Brandon McManus",
-    "position": "K",
-    "team": "PIT",
+    "id": 169,
+    "name": "Greg Dulcich",
+    "position": "TE",
+    "team": "DEN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 113.89982769910202,
-      "averagePoints": 6.69998986465306,
-      "consistency": 0.7100000000000001
+      "totalPoints": 61.567902122409635,
+      "averagePoints": 3.621641301318214,
+      "consistency": 0.668252345836339
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.27787288376384794
     }
   },
   {
-    "id": 91,
-    "name": "Matt Gay",
-    "position": "K",
-    "team": "CLE",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 125.7892746281324,
-      "averagePoints": 7.399369095772494,
-      "consistency": 0.7000000000000001
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "shoulder"
-      ],
-      "riskScore": 0.15000000000000002
-    }
-  },
-  {
-    "id": 92,
-    "name": "Jake Moody",
-    "position": "K",
+    "id": 170,
+    "name": "Chigoziem Okonkwo",
+    "position": "TE",
     "team": "TEN",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 120.91133085740563,
-      "averagePoints": 7.112431226906214,
-      "consistency": 0.6900000000000001
+      "totalPoints": 60.74290706853626,
+      "averagePoints": 3.573112180502133,
+      "consistency": 0.6522578202463225
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.3166629802860073
     }
   },
   {
-    "id": 93,
-    "name": "Greg Zuerlein",
-    "position": "K",
-    "team": "IND",
+    "id": 174,
+    "name": "Luke Musgrave",
+    "position": "TE",
+    "team": "GB",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 104.66774345669693,
-      "averagePoints": 6.156926085688054,
-      "consistency": 0.68
+      "totalPoints": 56.39538857284052,
+      "averagePoints": 3.3173757984023835,
+      "consistency": 0.6006275539929317
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.331056370816682
     }
   },
   {
-    "id": 94,
-    "name": "Jason Sanders",
-    "position": "K",
-    "team": "HOU",
+    "id": 180,
+    "name": "Gerald Everett",
+    "position": "TE",
+    "team": "LAC",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 108.57205987529998,
-      "averagePoints": 6.386591757370588,
-      "consistency": 0.67
+      "totalPoints": 53.382762168962685,
+      "averagePoints": 3.140162480527217,
+      "consistency": 0.6518767833635896
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.2536898651837247
+    }
+  },
+  {
+    "id": 179,
+    "name": "Noah Fant",
+    "position": "TE",
+    "team": "SEA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 52.41962481794451,
+      "averagePoints": 3.08350734223203,
+      "consistency": 0.553504424138912
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.3179559133756867
     }
   },
   {
     "id": 95,
-    "name": "Cairo Santos",
-    "position": "K",
-    "team": "DEN",
+    "name": "A.J. Brown",
+    "position": "WR",
+    "team": "PHI",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 107.96840599468916,
-      "averagePoints": 6.351082705569951,
-      "consistency": 0.66
+      "totalPoints": 343.20572501063674,
+      "averagePoints": 20.18857205944922,
+      "consistency": 0.8660811613854935
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.05
+      "riskScore": 0.27118733877123
+    }
+  },
+  {
+    "id": 91,
+    "name": "Tyreek Hill",
+    "position": "WR",
+    "team": "MIA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 327.7786297962956,
+      "averagePoints": 19.28109587037033,
+      "consistency": 0.8480139402374046
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2526880686239577
+    }
+  },
+  {
+    "id": 92,
+    "name": "CeeDee Lamb",
+    "position": "WR",
+    "team": "DAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 325.2580557018333,
+      "averagePoints": 19.132826805990195,
+      "consistency": 0.7592146095961408
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.27974983313865354
+    }
+  },
+  {
+    "id": 94,
+    "name": "Ja'Marr Chase",
+    "position": "WR",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 303.38341133270023,
+      "averagePoints": 17.846083019570603,
+      "consistency": 0.8065980653923408
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.22386017614357212
+    }
+  },
+  {
+    "id": 93,
+    "name": "Justin Jefferson",
+    "position": "WR",
+    "team": "MIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 295.24956917974754,
+      "averagePoints": 17.367621716455737,
+      "consistency": 0.8223386145083219
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2594637212072757
     }
   },
   {
     "id": 96,
-    "name": "49ers",
-    "position": "DEF",
-    "team": "49ers",
+    "name": "Stefon Diggs",
+    "position": "WR",
+    "team": "HOU",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 135.01222658558936,
-      "averagePoints": 7.941895681505256,
-      "consistency": 0.8
+      "totalPoints": 257.55699835518857,
+      "averagePoints": 15.15041166795227,
+      "consistency": 0.6545828772289044
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
-    }
-  },
-  {
-    "id": 97,
-    "name": "Cowboys",
-    "position": "DEF",
-    "team": "Cowboys",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 122.5052468753149,
-      "averagePoints": 7.206190992665582,
-      "consistency": 0.79
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.15
-    }
-  },
-  {
-    "id": 98,
-    "name": "Bills",
-    "position": "DEF",
-    "team": "Bills",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 113.56933086273591,
-      "averagePoints": 6.680548874278583,
-      "consistency": 0.78
-    },
-    "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.2417831727521469
     }
   },
   {
     "id": 99,
-    "name": "Ravens",
-    "position": "DEF",
-    "team": "Ravens",
+    "name": "Cooper Kupp",
+    "position": "WR",
+    "team": "LAR",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 125.49751449119191,
-      "averagePoints": 7.382206734775995,
-      "consistency": 0.77
+      "totalPoints": 257.15868897352465,
+      "averagePoints": 15.12698170432498,
+      "consistency": 0.7055380726661
     },
     "injury": {
-      "gamesInjured": 0,
-      "injuryHistory": [],
-      "riskScore": 0.15
+      "gamesInjured": 4,
+      "injuryHistory": [
+        "hamstring"
+      ],
+      "riskScore": 0.4852941176470588
     }
   },
   {
-    "id": 100,
-    "name": "Browns",
-    "position": "DEF",
-    "team": "Browns",
+    "id": 98,
+    "name": "Davante Adams",
+    "position": "WR",
+    "team": "LV",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 109.59963846720896,
-      "averagePoints": 6.447037556894645,
-      "consistency": 0.76
+      "totalPoints": 251.97031529530864,
+      "averagePoints": 14.821783252665213,
+      "consistency": 0.756610520904176
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.2936938166005228
     }
   },
   {
     "id": 101,
-    "name": "Jets",
-    "position": "DEF",
-    "team": "Jets",
+    "name": "Chris Olave",
+    "position": "WR",
+    "team": "NO",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 124.55952671474815,
-      "averagePoints": 7.327030983220479,
-      "consistency": 0.75
+      "totalPoints": 243.61496132735087,
+      "averagePoints": 14.330291842785345,
+      "consistency": 0.7729313879543229
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.233328481389266
+    }
+  },
+  {
+    "id": 97,
+    "name": "Amon-Ra St. Brown",
+    "position": "WR",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 224.2764447693681,
+      "averagePoints": 13.192732045256948,
+      "consistency": 0.7514070444447506
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.25529100392600546
     }
   },
   {
     "id": 102,
-    "name": "Saints",
-    "position": "DEF",
-    "team": "Saints",
+    "name": "DK Metcalf",
+    "position": "WR",
+    "team": "SEA",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 102.41951773101805,
-      "averagePoints": 6.024677513589297,
-      "consistency": 0.74
+      "totalPoints": 221.20944765871937,
+      "averagePoints": 13.012320450512904,
+      "consistency": 0.7502099171409475
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.2714734911091988
     }
   },
   {
-    "id": 103,
-    "name": "Steelers",
-    "position": "DEF",
-    "team": "Steelers",
+    "id": 100,
+    "name": "Garrett Wilson",
+    "position": "WR",
+    "team": "NYJ",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 116.99690235669539,
-      "averagePoints": 6.882170726864435,
-      "consistency": 0.73
+      "totalPoints": 220.0198646462222,
+      "averagePoints": 12.942344979189542,
+      "consistency": 0.7243020191324491
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.20275250037254405
     }
   },
   {
     "id": 104,
-    "name": "Dolphins",
-    "position": "DEF",
-    "team": "Dolphins",
+    "name": "Jaylen Waddle",
+    "position": "WR",
+    "team": "MIA",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 104.24025195701483,
-      "averagePoints": 6.131779526883226,
-      "consistency": 0.7200000000000001
-    },
-    "injury": {
-      "gamesInjured": 2,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 105,
-    "name": "Chiefs",
-    "position": "DEF",
-    "team": "Chiefs",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 100.20939327354814,
-      "averagePoints": 5.894670192561655,
-      "consistency": 0.7100000000000001
+      "totalPoints": 202.57440475398207,
+      "averagePoints": 11.916141456116591,
+      "consistency": 0.711570055746464
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.26174416750205876
     }
   },
   {
-    "id": 106,
-    "name": "Eagles",
-    "position": "DEF",
-    "team": "Eagles",
+    "id": 111,
+    "name": "Deebo Samuel",
+    "position": "WR",
+    "team": "SF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 104.32152398217525,
-      "averagePoints": 6.136560234245603,
-      "consistency": 0.7000000000000001
-    },
-    "injury": {
-      "gamesInjured": 1,
-      "injuryHistory": [
-        "ankle"
-      ],
-      "riskScore": 0.25
-    }
-  },
-  {
-    "id": 107,
-    "name": "Bengals",
-    "position": "DEF",
-    "team": "Bengals",
-    "stats": {
-      "gamesPlayed": 17,
-      "totalPoints": 93.57083479713367,
-      "averagePoints": 5.504166752772569,
-      "consistency": 0.6900000000000001
+      "totalPoints": 197.70750542395092,
+      "averagePoints": 11.629853260232407,
+      "consistency": 0.6011976406639606
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.252162062922665
     }
   },
   {
-    "id": 108,
-    "name": "Broncos",
-    "position": "DEF",
-    "team": "Broncos",
+    "id": 114,
+    "name": "Michael Pittman Jr.",
+    "position": "WR",
+    "team": "IND",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 102.32558362738585,
-      "averagePoints": 6.019151978081521,
-      "consistency": 0.68
+      "totalPoints": 189.27582940201964,
+      "averagePoints": 11.133872317765862,
+      "consistency": 0.5544207467351074
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.21812378265751092
     }
   },
   {
     "id": 109,
-    "name": "Jaguars",
-    "position": "DEF",
-    "team": "Jaguars",
+    "name": "Terry McLaurin",
+    "position": "WR",
+    "team": "WAS",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 90.23292869524325,
-      "averagePoints": 5.307819335014308,
-      "consistency": 0.67
+      "totalPoints": 188.4586420766002,
+      "averagePoints": 11.085802475094129,
+      "consistency": 0.6780164832439378
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.21151856169241334
+    }
+  },
+  {
+    "id": 108,
+    "name": "Calvin Ridley",
+    "position": "WR",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 181.12738617540828,
+      "averagePoints": 10.654552127965193,
+      "consistency": 0.7105977115675322
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2662538602679748
+    }
+  },
+  {
+    "id": 113,
+    "name": "DJ Moore",
+    "position": "WR",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 180.48809472765487,
+      "averagePoints": 10.61694674868558,
+      "consistency": 0.5862557648952165
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2460839754403239
+    }
+  },
+  {
+    "id": 107,
+    "name": "Tee Higgins",
+    "position": "WR",
+    "team": "CIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 180.01454080431165,
+      "averagePoints": 10.589090635547745,
+      "consistency": 0.6615643345045399
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.22261159883493184
+    }
+  },
+  {
+    "id": 105,
+    "name": "Keenan Allen",
+    "position": "WR",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 179.8349399638185,
+      "averagePoints": 10.578525880224618,
+      "consistency": 0.7471270773567582
+    },
+    "injury": {
+      "gamesInjured": 4,
+      "injuryHistory": [
+        "heel"
+      ],
+      "riskScore": 0.4852941176470588
+    }
+  },
+  {
+    "id": 103,
+    "name": "DeVonta Smith",
+    "position": "WR",
+    "team": "PHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 179.6340442702829,
+      "averagePoints": 10.56670848648723,
+      "consistency": 0.6943716668160188
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.23359039334342002
     }
   },
   {
     "id": 110,
-    "name": "Patriots",
-    "position": "DEF",
-    "team": "Patriots",
+    "name": "Brandon Aiyuk",
+    "position": "WR",
+    "team": "SF",
     "stats": {
       "gamesPlayed": 17,
-      "totalPoints": 96.67145565162046,
-      "averagePoints": 5.686556214801204,
-      "consistency": 0.66
+      "totalPoints": 175.2919165152286,
+      "averagePoints": 10.311289206778152,
+      "consistency": 0.7104934018631408
     },
     "injury": {
       "gamesInjured": 0,
       "injuryHistory": [],
-      "riskScore": 0.15
+      "riskScore": 0.24333529357474631
+    }
+  },
+  {
+    "id": 106,
+    "name": "Mike Evans",
+    "position": "WR",
+    "team": "TB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 169.7273464790517,
+      "averagePoints": 9.983961557591277,
+      "consistency": 0.7504109720003099
+    },
+    "injury": {
+      "gamesInjured": 1,
+      "injuryHistory": [
+        "hamstring"
+      ],
+      "riskScore": 0.3088235294117647
+    }
+  },
+  {
+    "id": 112,
+    "name": "Amari Cooper",
+    "position": "WR",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 164.9042153249816,
+      "averagePoints": 9.700247960293035,
+      "consistency": 0.5732809895958259
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.25323892727396446
+    }
+  },
+  {
+    "id": 117,
+    "name": "Drake London",
+    "position": "WR",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 128.76187541961332,
+      "averagePoints": 7.574227965859607,
+      "consistency": 0.5778423531194461
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.23038362114517288
+    }
+  },
+  {
+    "id": 123,
+    "name": "Courtland Sutton",
+    "position": "WR",
+    "team": "DEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 128.05563524086506,
+      "averagePoints": 7.532684425933239,
+      "consistency": 0.63880824118195
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20757250610006897
+    }
+  },
+  {
+    "id": 122,
+    "name": "Jerry Jeudy",
+    "position": "WR",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 126.86837511546734,
+      "averagePoints": 7.462845595027491,
+      "consistency": 0.6843519799500528
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2853510998882301
+    }
+  },
+  {
+    "id": 126,
+    "name": "Zay Flowers",
+    "position": "WR",
+    "team": "BAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 126.00684852960565,
+      "averagePoints": 7.412167560565038,
+      "consistency": 0.629089405351344
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.26532508591509957
+    }
+  },
+  {
+    "id": 125,
+    "name": "Jordan Addison",
+    "position": "WR",
+    "team": "MIN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 126.00027642556358,
+      "averagePoints": 7.411780966209623,
+      "consistency": 0.6044157173742435
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20946454731196207
+    }
+  },
+  {
+    "id": 118,
+    "name": "Chris Godwin",
+    "position": "WR",
+    "team": "TB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 120.89501884925427,
+      "averagePoints": 7.111471697014957,
+      "consistency": 0.5933812852559427
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2426725242325775
+    }
+  },
+  {
+    "id": 116,
+    "name": "George Pickens",
+    "position": "WR",
+    "team": "PIT",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 119.6319966663357,
+      "averagePoints": 7.037176274490335,
+      "consistency": 0.6644401809045551
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.25713345107686875
+    }
+  },
+  {
+    "id": 121,
+    "name": "Diontae Johnson",
+    "position": "WR",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 115.09426144275236,
+      "averagePoints": 6.77025067310308,
+      "consistency": 0.6929497525661374
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20714287235393097
+    }
+  },
+  {
+    "id": 115,
+    "name": "Christian Kirk",
+    "position": "WR",
+    "team": "JAX",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 114.98713758267276,
+      "averagePoints": 6.763949269568986,
+      "consistency": 0.5801739140697735
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20366253218186658
+    }
+  },
+  {
+    "id": 119,
+    "name": "Tyler Lockett",
+    "position": "WR",
+    "team": "SEA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 112.53899291071694,
+      "averagePoints": 6.619940759453938,
+      "consistency": 0.6797931270435912
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2253524467666847
+    }
+  },
+  {
+    "id": 124,
+    "name": "Jaxon Smith-Njigba",
+    "position": "WR",
+    "team": "SEA",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 110.1115609059274,
+      "averagePoints": 6.477150641525141,
+      "consistency": 0.6150045720502262
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.23561241296925167
+    }
+  },
+  {
+    "id": 120,
+    "name": "Marquise Brown",
+    "position": "WR",
+    "team": "KC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 109.11362678594708,
+      "averagePoints": 6.418448634467475,
+      "consistency": 0.693735476604949
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2985409553260483
+    }
+  },
+  {
+    "id": 128,
+    "name": "Tank Dell",
+    "position": "WR",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 63.36706342025508,
+      "averagePoints": 3.727474318838534,
+      "consistency": 0.686708963161484
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2174112107211476
+    }
+  },
+  {
+    "id": 130,
+    "name": "Nico Collins",
+    "position": "WR",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 62.69055855687754,
+      "averagePoints": 3.6876799151104436,
+      "consistency": 0.6869370407806424
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.24123312724876128
+    }
+  },
+  {
+    "id": 127,
+    "name": "Rashee Rice",
+    "position": "WR",
+    "team": "KC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 62.56502965475188,
+      "averagePoints": 3.6802958620442285,
+      "consistency": 0.6291597065854185
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.21823457064775395
+    }
+  },
+  {
+    "id": 129,
+    "name": "Puka Nacua",
+    "position": "WR",
+    "team": "LAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 60.86166438781556,
+      "averagePoints": 3.580097905165621,
+      "consistency": 0.5981076821318394
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2419614664494564
+    }
+  },
+  {
+    "id": 135,
+    "name": "Elijah Moore",
+    "position": "WR",
+    "team": "CLE",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 59.07028725503015,
+      "averagePoints": 3.474722779707656,
+      "consistency": 0.6150126177140679
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.22190776987385397
+    }
+  },
+  {
+    "id": 131,
+    "name": "Michael Thomas",
+    "position": "WR",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 56.04013976272769,
+      "averagePoints": 3.2964788095722173,
+      "consistency": 0.5586299779967696
+    },
+    "injury": {
+      "gamesInjured": 6,
+      "injuryHistory": [
+        "foot"
+      ],
+      "riskScore": 0.6029411764705883
+    }
+  },
+  {
+    "id": 134,
+    "name": "Jakobi Meyers",
+    "position": "WR",
+    "team": "LV",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 55.02406554258986,
+      "averagePoints": 3.2367097377994036,
+      "consistency": 0.6651914069569612
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2278139565399328
+    }
+  },
+  {
+    "id": 139,
+    "name": "Quentin Johnston",
+    "position": "WR",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 54.27039629005133,
+      "averagePoints": 3.1923762523559605,
+      "consistency": 0.6015892428542924
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.27098243494345164
+    }
+  },
+  {
+    "id": 132,
+    "name": "Brandin Cooks",
+    "position": "WR",
+    "team": "DAL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 53.90504930572072,
+      "averagePoints": 3.1708852532776897,
+      "consistency": 0.6566164343599308
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.27992277729639103
+    }
+  },
+  {
+    "id": 136,
+    "name": "Curtis Samuel",
+    "position": "WR",
+    "team": "BUF",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 52.40989308644897,
+      "averagePoints": 3.0829348874381743,
+      "consistency": 0.6042174811090213
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2554758592593186
+    }
+  },
+  {
+    "id": 133,
+    "name": "Gabe Davis",
+    "position": "WR",
+    "team": "JAX",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 52.404856199516,
+      "averagePoints": 3.082638599971529,
+      "consistency": 0.6871044860451155
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2821428321095163
+    }
+  },
+  {
+    "id": 143,
+    "name": "Robert Woods",
+    "position": "WR",
+    "team": "HOU",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 52.306694031211265,
+      "averagePoints": 3.076864354777133,
+      "consistency": 0.5775673009598955
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2900394311173389
+    }
+  },
+  {
+    "id": 142,
+    "name": "Adam Thielen",
+    "position": "WR",
+    "team": "CAR",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 51.835622759799094,
+      "averagePoints": 3.049154279988182,
+      "consistency": 0.6473276382361793
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.20316922836596818
+    }
+  },
+  {
+    "id": 137,
+    "name": "Rashid Shaheed",
+    "position": "WR",
+    "team": "NO",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 49.84963636377576,
+      "averagePoints": 2.9323315508103387,
+      "consistency": 0.6197434106070294
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.24120408534589177
+    }
+  },
+  {
+    "id": 138,
+    "name": "Josh Palmer",
+    "position": "WR",
+    "team": "LAC",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 49.649420364577324,
+      "averagePoints": 2.9205541390927836,
+      "consistency": 0.6896804882943488
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2712203007133015
+    }
+  },
+  {
+    "id": 144,
+    "name": "DeAndre Hopkins",
+    "position": "WR",
+    "team": "TEN",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 49.229710450986104,
+      "averagePoints": 2.8958653206462412,
+      "consistency": 0.646828283988331
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.26115522679611636
+    }
+  },
+  {
+    "id": 145,
+    "name": "Jameson Williams",
+    "position": "WR",
+    "team": "DET",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 48.261989295822865,
+      "averagePoints": 2.8389405468131095,
+      "consistency": 0.6436867698951568
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.22436926812888658
+    }
+  },
+  {
+    "id": 140,
+    "name": "Rome Odunze",
+    "position": "WR",
+    "team": "CHI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 47.68536593804699,
+      "averagePoints": 2.80502152576747,
+      "consistency": 0.6666297034155029
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.27180750270272547
+    }
+  },
+  {
+    "id": 141,
+    "name": "Mike Williams",
+    "position": "WR",
+    "team": "NYJ",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 46.76929334343123,
+      "averagePoints": 2.751134902554778,
+      "consistency": 0.5847663068974126
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.28654432630241555
+    }
+  },
+  {
+    "id": 148,
+    "name": "Jaylen Jaylen",
+    "position": "WR",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 46.25697601264984,
+      "averagePoints": 2.720998588979402,
+      "consistency": 0.5730119053379675
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.24893457295325847
+    }
+  },
+  {
+    "id": 147,
+    "name": "Romeo Doubs",
+    "position": "WR",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 42.68521154166086,
+      "averagePoints": 2.510894796568286,
+      "consistency": 0.6234604434960004
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.24070591518011678
+    }
+  },
+  {
+    "id": 146,
+    "name": "Christian Watson",
+    "position": "WR",
+    "team": "GB",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 41.82109446777221,
+      "averagePoints": 2.460064380457189,
+      "consistency": 0.6540260590183561
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.24280861012520633
+    }
+  },
+  {
+    "id": 150,
+    "name": "Rondale Moore",
+    "position": "WR",
+    "team": "ARI",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 40.193822067867416,
+      "averagePoints": 2.364342474580436,
+      "consistency": 0.5559839184289115
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2179146582223987
+    }
+  },
+  {
+    "id": 149,
+    "name": "Darnell Mooney",
+    "position": "WR",
+    "team": "ATL",
+    "stats": {
+      "gamesPlayed": 17,
+      "totalPoints": 38.8876463711975,
+      "averagePoints": 2.287508610070441,
+      "consistency": 0.6156863699890329
+    },
+    "injury": {
+      "gamesInjured": 0,
+      "injuryHistory": [],
+      "riskScore": 0.2820377244932052
     }
   }
 ]

@@ -151,9 +151,17 @@ h1 {
 }
 
 .info-icon {
-    cursor: help;
+    cursor: pointer;
     color: var(--secondary-color);
     font-size: 18px;
+    user-select: none;
+    transition: transform 0.2s;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.info-icon:hover {
+    transform: scale(1.2);
 }
 
 .slider-container {
@@ -546,7 +554,11 @@ input[type="range"]::-moz-range-thumb {
     max-width: 300px;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 5px;
+    top: 30px;
+    left: 0;
+    right: auto;
+    opacity: 1;
+    transition: opacity 0.2s ease;
 }
 
 .tooltip.hidden {
@@ -733,17 +745,6 @@ input[type="number"]:focus {
     margin-left: 5px;
 }
 
-.info-icon {
-    cursor: pointer;
-    color: var(--secondary-color);
-    font-size: 18px;
-    user-select: none;
-    transition: transform 0.2s;
-}
-
-.info-icon:hover {
-    transform: scale(1.2);
-}
 
 .control-group {
     position: relative;

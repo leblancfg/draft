@@ -443,8 +443,13 @@ function filterPosition(position) {
 }
 
 // Tooltip functionality
-function showTooltip(tooltipId) {
+function showTooltip(tooltipId, event) {
     console.log('showTooltip called with:', tooltipId);
+    
+    // Prevent event from bubbling up
+    if (event) {
+        event.stopPropagation();
+    }
     
     // Hide all other tooltips
     document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
@@ -454,8 +459,20 @@ function showTooltip(tooltipId) {
     console.log('Tooltip element:', tooltip);
     
     if (tooltip) {
+        const wasHidden = tooltip.classList.contains('hidden');
         tooltip.classList.toggle('hidden');
         console.log('Tooltip hidden class:', tooltip.classList.contains('hidden'));
+        
+        // If we're showing the tooltip, position it
+        if (wasHidden && event && event.target) {
+            const icon = event.target;
+            const iconRect = icon.getBoundingClientRect();
+            const parentRect = icon.closest('.control-group, .slider-group').getBoundingClientRect();
+            
+            // Position relative to the parent container
+            tooltip.style.top = (iconRect.bottom - parentRect.top + 5) + 'px';
+            tooltip.style.left = (iconRect.left - parentRect.left - 20) + 'px';
+        }
     } else {
         console.error('Tooltip not found:', tooltipId);
     }

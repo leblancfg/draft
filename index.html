@@ -72,7 +72,7 @@
                 <div class="control-group">
                     <label for="league-size">
                         League Size:
-                        <span class="info-icon" onclick="showTooltip('league-size-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('league-size-info', event)">ⓘ</span>
                     </label>
                     <input type="number" id="league-size" min="4" max="20" value="12" step="1">
                     <span class="unit-label">teams</span>
@@ -84,7 +84,7 @@
                 <div class="control-group">
                     <label for="scoring-type">
                         Scoring Type:
-                        <span class="info-icon" onclick="showTooltip('scoring-type-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('scoring-type-info', event)">ⓘ</span>
                     </label>
                     <select id="scoring-type">
                         <option value="standard">Standard</option>
@@ -102,7 +102,7 @@
                 <div class="control-group">
                     <label for="position-priority">
                         Draft Strategy:
-                        <span class="info-icon" onclick="showTooltip('strategy-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('strategy-info', event)">ⓘ</span>
                     </label>
                     <select id="position-priority">
                         <option value="balanced" selected>Balanced Approach</option>
@@ -125,7 +125,7 @@
                 <div class="slider-group">
                     <label for="risk-tolerance">
                         Risk Tolerance:
-                        <span class="info-icon" onclick="showTooltip('risk-tolerance-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('risk-tolerance-info', event)">ⓘ</span>
                     </label>
                     <div class="slider-container">
                         <span class="slider-label">Floor</span>
@@ -143,7 +143,7 @@
                 <div class="slider-group">
                     <label for="vorp-weight">
                         VORP Weight:
-                        <span class="info-icon" onclick="showTooltip('vorp-weight-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('vorp-weight-info', event)">ⓘ</span>
                     </label>
                     <input type="range" id="vorp-weight" min="0" max="1" step="0.1" value="0.7">
                     <span id="vorp-weight-value" class="slider-value">0.7</span>
@@ -155,7 +155,7 @@
                 <div class="slider-group">
                     <label for="consistency-weight">
                         Consistency Weight:
-                        <span class="info-icon" onclick="showTooltip('consistency-weight-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('consistency-weight-info', event)">ⓘ</span>
                     </label>
                     <input type="range" id="consistency-weight" min="0" max="1" step="0.1" value="0.3">
                     <span id="consistency-weight-value" class="slider-value">0.3</span>
@@ -167,7 +167,7 @@
                 <div class="slider-group">
                     <label for="injury-weight">
                         Injury Risk Penalty:
-                        <span class="info-icon" onclick="showTooltip('injury-weight-info')">ⓘ</span>
+                        <span class="info-icon" onclick="showTooltip('injury-weight-info', event)">ⓘ</span>
                     </label>
                     <input type="range" id="injury-weight" min="0" max="1" step="0.1" value="0.5">
                     <span id="injury-weight-value" class="slider-value">0.5</span>

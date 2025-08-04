@@ -269,6 +269,7 @@ function initializeEventListeners() {
     document.getElementById('scoring-type')?.addEventListener('change', (e) => {
         leagueSettings.scoringType = e.target.value;
         updateRankings();
+        if (window.saveDraftState) saveDraftState();
     });
     
     // Risk tolerance slider

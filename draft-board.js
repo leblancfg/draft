@@ -4,18 +4,122 @@ let draggedPlayer = null;
 
 // Initialize draft board
 function initializeDraftBoard() {
+    // Try to load saved state first
+    const stateLoaded = loadDraftState();
+    
     // Update position limits display
     updatePositionLimits();
     
-    // Initialize team boards
-    initializeTeamBoards();
+    if (stateLoaded && teamBoards.length > 0) {
+        // Restore the team boards UI from saved state
+        restoreTeamBoardsUI();
+    } else {
+        // Initialize new team boards
+        initializeTeamBoards();
+    }
     
     // Display available players
     displayAvailablePlayers(currentPositionFilter);
 }
 
+// Restore team boards UI from saved state
+function restoreTeamBoardsUI() {
+    const teamsContainer = document.getElementById('teams-container');
+    teamsContainer.innerHTML = '';
+    
+    teamBoards.forEach(teamBoard => {
+        const teamElement = createTeamBoardElement(teamBoard);
+        teamsContainer.appendChild(teamElement);
+        
+        // Restore filled slots
+        Object.entries(teamBoard.roster).forEach(([position, players]) => {
+            players.forEach((player, index) => {
+                const slot = teamElement.querySelector(
+                    `.roster-slot[data-position="${position}"][data-slot="${index}"]`
+                );
+                if (slot) {
+                    slot.classList.add('filled');
+                    slot.innerHTML = `
+                        <div class="slot-label">${position}</div>
+                        <div class="player-name">${player.name}</div>
+                        <div class="player-info">${player.position} - ${player.team}</div>
+                    `;
+                }
+            });
+        });
+        
+        // Check position limits
+        checkPositionLimits(teamBoard.id);
+    });
+    
+    // Add drop listeners
+    addDropListeners();
+}
+
 // Make initializeDraftBoard available globally
 window.initializeDraftBoard = initializeDraftBoard;
+
+// Save draft state to localStorage
+function saveDraftState() {
+    const draftState = {
+        draftedPlayers: Array.from(draftedPlayers),
+        teamBoards: teamBoards,
+        leagueSettings: leagueSettings,
+        modelSettings: modelSettings,
+        timestamp: new Date().toISOString()
+    };
+    
+    try {
+        localStorage.setItem('fantasyDraftState', JSON.stringify(draftState));
+        console.log('Draft state saved');
+    } catch (e) {
+        console.error('Failed to save draft state:', e);
+    }
+}
+
+// Load draft state from localStorage
+function loadDraftState() {
+    try {
+        const savedState = localStorage.getItem('fantasyDraftState');
+        if (!savedState) return false;
+        
+        const draftState = JSON.parse(savedState);
+        console.log('Loading draft state from:', draftState.timestamp);
+        
+        // Restore drafted players
+        draftedPlayers.clear();
+        draftState.draftedPlayers.forEach(id => draftedPlayers.add(id));
+        
+        // Restore settings
+        Object.assign(leagueSettings, draftState.leagueSettings);
+        Object.assign(modelSettings, draftState.modelSettings);
+        
+        // Restore team boards
+        teamBoards = draftState.teamBoards;
+        
+        return true;
+    } catch (e) {
+        console.error('Failed to load draft state:', e);
+        return false;
+    }
+}
+
+// Clear draft state
+function clearDraftState() {
+    if (confirm('Are you sure you want to clear all draft data? This cannot be undone.')) {
+        localStorage.removeItem('fantasyDraftState');
+        draftedPlayers.clear();
+        teamBoards = [];
+        initializeDraftBoard();
+        updateRankings();
+        alert('Draft data cleared');
+    }
+}
+
+// Auto-save on changes
+window.saveDraftState = saveDraftState;
+window.loadDraftState = loadDraftState;
+window.clearDraftState = clearDraftState;
 
 // Update position limits display
 function updatePositionLimits() {
@@ -267,6 +371,9 @@ function draftPlayerToTeam(player, teamId, position, slot) {
     displayAvailablePlayers(currentPositionFilter);
     checkPositionLimits(teamId);
     console.log('Draft complete for', player.name);
+    
+    // Save draft state
+    saveDraftState();
 }
 
 // Check and update position limits for a team

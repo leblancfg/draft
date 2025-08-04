@@ -258,6 +258,11 @@ function initializeEventListeners() {
     document.getElementById('league-size')?.addEventListener('input', (e) => {
         leagueSettings.size = parseInt(e.target.value) || 12;
         updateRankings();
+        
+        // Update draft board if it's active
+        if (document.getElementById('draft-pick').classList.contains('active') && window.initializeDraftBoard) {
+            window.initializeDraftBoard();
+        }
     });
     
     // Scoring type
@@ -444,67 +449,45 @@ function filterPosition(position) {
 
 // Tooltip functionality
 function showTooltip(tooltipId, event) {
-    console.log('showTooltip called with:', tooltipId);
-    
-    // Prevent event from bubbling up
+    // Prevent default and stop propagation
     if (event) {
+        event.preventDefault();
         event.stopPropagation();
     }
     
     const tooltip = document.getElementById(tooltipId);
-    console.log('Tooltip element:', tooltip);
-    
     if (!tooltip) {
         console.error('Tooltip not found:', tooltipId);
         return;
     }
     
-    const isCurrentlyHidden = tooltip.classList.contains('hidden');
-    console.log('Tooltip currently hidden:', isCurrentlyHidden);
+    // Get current state
+    const isHidden = tooltip.classList.contains('hidden');
     
-    // Hide all tooltips first
+    // Hide all other tooltips
     document.querySelectorAll('.tooltip').forEach(t => {
-        t.classList.add('hidden');
+        if (t.id !== tooltipId) {
+            t.classList.add('hidden');
+        }
     });
     
-    // If this tooltip was hidden, show it
-    if (isCurrentlyHidden) {
+    // Toggle this tooltip
+    if (isHidden) {
         tooltip.classList.remove('hidden');
-        console.log('Showing tooltip');
-        
-        // Position the tooltip if we have event info
-        if (event && event.target) {
-            const icon = event.target;
-            const iconRect = icon.getBoundingClientRect();
-            const parentRect = icon.closest('.control-group, .slider-group').getBoundingClientRect();
-            
-            // Position relative to the parent container
-            tooltip.style.top = (iconRect.bottom - parentRect.top + 5) + 'px';
-            tooltip.style.left = (iconRect.left - parentRect.left - 20) + 'px';
-        }
     } else {
-        console.log('Hiding tooltip');
-        // Tooltip was visible, so keep it hidden (already done above)
+        tooltip.classList.add('hidden');
     }
 }
 
 // Make showTooltip available globally
 window.showTooltip = showTooltip;
 
-// Hide tooltips when clicking elsewhere
+// Hide tooltips when clicking outside
 document.addEventListener('click', (e) => {
-    // Skip if clicking on info icon (handled by showTooltip)
-    if (e.target.classList.contains('info-icon')) {
-        return;
+    // Don't hide if clicking on icon or tooltip
+    if (!e.target.classList.contains('info-icon') && !e.target.closest('.tooltip')) {
+        document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
     }
-    
-    // Skip if clicking inside a tooltip
-    if (e.target.closest('.tooltip')) {
-        return;
-    }
-    
-    // Hide all tooltips
-    document.querySelectorAll('.tooltip').forEach(t => t.classList.add('hidden'));
 });
 
 // Tab functionality

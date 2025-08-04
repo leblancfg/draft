@@ -14,6 +14,9 @@ function initializeDraftBoard() {
     displayAvailablePlayers(currentPositionFilter);
 }
 
+// Make initializeDraftBoard available globally
+window.initializeDraftBoard = initializeDraftBoard;
+
 // Update position limits display
 function updatePositionLimits() {
     document.getElementById('qb-limit').textContent = leagueSettings.rosterPositions.QB;
@@ -179,15 +182,35 @@ function handleDrop(e) {
     e.stopPropagation();
     
     const slot = e.target.closest('.roster-slot');
+    console.log('Drop - slot:', slot);
+    
     if (!slot || slot.classList.contains('filled') || slot.classList.contains('disabled')) {
+        console.log('Drop cancelled - slot filled or disabled');
+        return false;
+    }
+    
+    if (!draggedPlayer) {
+        console.error('No dragged player!');
         return false;
     }
     
     const playerId = draggedPlayer.dataset.playerId;
-    const player = playersData.find(p => p.id === playerId);
+    console.log('Player ID:', playerId);
+    
+    const player = playersData.find(p => p.id == playerId); // Use == instead of === for type coercion
+    console.log('Found player:', player);
+    
+    if (!player) {
+        console.error('Player not found with ID:', playerId);
+        alert('Error: Player data not found');
+        return false;
+    }
+    
     const position = slot.dataset.position;
     const teamBoard = slot.closest('.team-board');
     const teamId = teamBoard.id;
+    
+    console.log('Dropping player:', player.name, 'to position:', position, 'on team:', teamId);
     
     // Check if player can be placed in this slot
     if (!canPlacePlayer(player, position)) {
@@ -212,8 +235,11 @@ function canPlacePlayer(player, slotPosition) {
 
 // Draft player to specific team and slot
 function draftPlayerToTeam(player, teamId, position, slot) {
+    console.log('Drafting player:', player.name, 'to team:', teamId, 'position:', position);
+    
     // Mark as drafted
     draftedPlayers.add(player.id);
+    console.log('Player marked as drafted');
     
     // Update slot UI
     slot.classList.add('filled');
@@ -223,16 +249,24 @@ function draftPlayerToTeam(player, teamId, position, slot) {
         <div class="player-name">${player.name}</div>
         <div class="player-info">${player.position} - ${player.team}</div>
     `;
+    console.log('Slot UI updated');
     
     // Update team roster
     const team = teamBoards.find(t => t.id === teamId);
     if (team) {
         team.roster[position].push(player);
+        console.log('Added to team roster');
     }
     
     // Update displays
-    updateRankings();
+    if (typeof updateRankings === 'function') {
+        updateRankings();
+    } else {
+        console.warn('updateRankings function not found');
+    }
+    displayAvailablePlayers(currentPositionFilter);
     checkPositionLimits(teamId);
+    console.log('Draft complete for', player.name);
 }
 
 // Check and update position limits for a team

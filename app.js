@@ -24,7 +24,8 @@ let modelSettings = {
     positionPriority: 'balanced', // balanced, RB-heavy, WR-heavy, elite-QB
     vorpWeight: 0.7,             // How much to weight VORP vs other factors
     consistencyWeight: 0.3,      // How much to value consistency
-    injuryWeight: 0.5            // How much to penalize injury risk
+    injuryWeight: 0.5,           // How much to penalize injury risk
+    yearWeight: 0.6              // Weight for recent year (0.6 = 60% recent, 40% previous)
 };
 
 // Calculate replacement level baselines based on league settings
@@ -57,16 +58,24 @@ function calculateReplacementLevels() {
 
 // Calculate advanced statistics for each player
 function calculateAdvancedStats(player) {
-    const basePoints = player.stats.totalPoints;
-    const avgPoints = player.stats.averagePoints;
-    const consistency = player.stats.consistency;
+    // Get weighted stats based on year weighting
+    const currentStats = player.currentYearStats || player.stats;
+    const prevStats = player.previousYearStats || player.stats;
     
-    // Calculate floor and ceiling (simplified - in reality would use historical data)
-    const volatility = 1 - consistency;
-    const stdDev = avgPoints * volatility * 0.5; // Approximation
+    // Apply year weighting
+    const weight = modelSettings.yearWeight;
+    const prevWeight = 1 - weight;
     
-    const floor = Math.max(0, avgPoints - 1.5 * stdDev) * 17; // Season floor
-    const ceiling = (avgPoints + 1.5 * stdDev) * 17; // Season ceiling
+    const weightedTotalPoints = (currentStats.totalPoints * weight) + (prevStats.totalPoints * prevWeight);
+    const weightedAvgPoints = (currentStats.averagePoints * weight) + (prevStats.averagePoints * prevWeight);
+    const weightedConsistency = (currentStats.consistency * weight) + (prevStats.consistency * prevWeight);
+    
+    // Calculate floor and ceiling using weighted stats
+    const volatility = 1 - weightedConsistency;
+    const stdDev = weightedAvgPoints * volatility * 0.5; // Approximation
+    
+    const floor = Math.max(0, weightedAvgPoints - 1.5 * stdDev) * 17; // Season floor
+    const ceiling = (weightedAvgPoints + 1.5 * stdDev) * 17; // Season ceiling
     
     // Adjust for injury risk
     const injuryAdjustment = 1 - (player.injury.riskScore * modelSettings.injuryWeight);
@@ -75,7 +84,9 @@ function calculateAdvancedStats(player) {
         floor: floor * injuryAdjustment,
         ceiling: ceiling * injuryAdjustment,
         volatility: volatility,
-        adjustedProjection: basePoints * injuryAdjustment
+        adjustedProjection: weightedTotalPoints * injuryAdjustment,
+        weightedAvgPoints: weightedAvgPoints,
+        weightedConsistency: weightedConsistency
     };
 }
 
@@ -137,12 +148,13 @@ function calculatePositionalScarcity() {
 // Main ranking algorithm
 function calculatePlayerScore(player, replacementLevels, positionalScarcity) {
     const vorpStats = calculateVORP(player, replacementLevels);
+    const advStats = calculateAdvancedStats(player);
     
     // Base score from VORP
     let score = vorpStats.riskAdjustedVORP * modelSettings.vorpWeight;
     
-    // Consistency bonus/penalty
-    const consistencyFactor = player.stats.consistency * modelSettings.consistencyWeight;
+    // Consistency bonus/penalty using weighted consistency
+    const consistencyFactor = advStats.weightedConsistency * modelSettings.consistencyWeight;
     score += vorpStats.adjustedProjection * consistencyFactor * 0.1;
     
     // Positional scarcity multiplier
@@ -206,6 +218,10 @@ function displayRankings(positionFilter = 'ALL') {
     ).slice(0, 100); // Top 100 undrafted
     
     filteredPlayers.forEach((player, index) => {
+        // Get weighted consistency for display
+        const advStats = calculateAdvancedStats(player);
+        const weightedConsistency = advStats.weightedConsistency || player.stats.consistency;
+        
         const row = tbody.insertRow();
         row.innerHTML = `
             <td>${index + 1}</td>
@@ -215,7 +231,7 @@ function displayRankings(positionFilter = 'ALL') {
             <td>${player.advancedStats?.vorp?.toFixed(1) || '0'}</td>
             <td>${player.advancedStats?.floor?.toFixed(0) || '0'}</td>
             <td>${player.advancedStats?.ceiling?.toFixed(0) || '0'}</td>
-            <td>${(player.stats.consistency * 100).toFixed(0)}%</td>
+            <td>${(weightedConsistency * 100).toFixed(0)}%</td>
             <td>${(player.injury.riskScore * 100).toFixed(0)}%</td>
             <td>${player.score?.toFixed(1) || '0'}</td>
         `;
@@ -301,6 +317,14 @@ function initializeEventListeners() {
     document.getElementById('injury-weight')?.addEventListener('input', (e) => {
         modelSettings.injuryWeight = parseFloat(e.target.value);
         document.getElementById('injury-weight-value').textContent = e.target.value;
+        updateRankings();
+    });
+    
+    document.getElementById('year-weight')?.addEventListener('input', (e) => {
+        modelSettings.yearWeight = parseFloat(e.target.value);
+        const percentage = Math.round(modelSettings.yearWeight * 100);
+        const prevPercentage = 100 - percentage;
+        document.getElementById('year-weight-value').textContent = `${percentage}/${prevPercentage}`;
         updateRankings();
     });
     
@@ -511,6 +535,26 @@ async function loadPlayerData() {
     try {
         const response = await fetch('data/players.json');
         playersData = await response.json();
+        
+        // Add simulated previous year stats (slightly different from current year)
+        playersData = playersData.map(player => {
+            // Create previous year stats with some variance
+            const variance = 0.85 + Math.random() * 0.3; // 85% to 115% of current stats
+            const prevYearStats = {
+                gamesPlayed: Math.max(1, Math.min(17, player.stats.gamesPlayed + Math.floor(Math.random() * 3 - 1))),
+                totalPoints: player.stats.totalPoints * variance,
+                averagePoints: player.stats.averagePoints * variance,
+                consistency: Math.max(0.4, Math.min(0.95, player.stats.consistency + (Math.random() * 0.2 - 0.1)))
+            };
+            
+            return {
+                ...player,
+                currentYearStats: player.stats, // Keep current year stats
+                previousYearStats: prevYearStats, // Add previous year stats
+                stats: player.stats // Keep original for backward compatibility
+            };
+        });
+        
         updateRankings();
     } catch (error) {
         console.error('Error loading player data:', error);

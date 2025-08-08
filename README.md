@@ -41,10 +41,6 @@ If something isn't working, try refreshing your browser. The tool works best on 
 ---
 
 ### Technical Details
-
-<details>
-<summary>For Developers (click to expand)</summary>
-
 #### Data Update
 
 To update player data:
@@ -68,4 +64,4 @@ python3 scrape_nfl_data.py
 - Performance Weight: 0-2 scale  
 - Consistency Weight: 0-2 scale
 
-</details>
+

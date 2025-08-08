@@ -176,6 +176,25 @@
                         Penalizes players based on injury history. Higher values mean more cautious approach to injury-prone players.
                     </div>
                 </div>
+
+                <div class="slider-group">
+                    <label for="year-weight">
+                        Recent Year Weighting:
+                        <span class="info-icon" onclick="showTooltip('year-weight-info', event)">ⓘ</span>
+                    </label>
+                    <div class="slider-container">
+                        <span class="slider-label">50/50</span>
+                        <input type="range" id="year-weight" min="0.5" max="0.9" step="0.05" value="0.6">
+                        <span class="slider-label">90/10</span>
+                    </div>
+                    <span id="year-weight-value" class="slider-value">60/40</span>
+                    <div id="year-weight-info" class="tooltip hidden">
+                        <strong>Weight for recent vs previous year stats:</strong><br>
+                        60/40 = 60% weight on most recent year, 40% on previous year<br>
+                        Higher values give more importance to recent performance<br>
+                        Lower values consider both years more equally
+                    </div>
+                </div>
             </div>
 
             <div class="rankings-section">
